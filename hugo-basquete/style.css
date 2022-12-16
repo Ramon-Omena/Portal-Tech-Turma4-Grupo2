@@ -12,12 +12,14 @@
     color: white;
     display: flex;
     justify-content:space-around;
+    align-items: center;
     }
 
 .menu a{
     color: white;
     font-size: 30px;
     font-weight: bolder;
+    padding: 10px;
 }
 .menu span{
     font-size: 60px;
@@ -27,9 +29,11 @@
 
 header nav ul{
     display: flex;
-    background-color: #F09635
-    ;
+    align-items: center;
+    background-color: #F09635;
     justify-content: center;
+    gap: 20px;
+    
 }
 
 button{
@@ -42,7 +46,9 @@ button{
         font-size: 30px;
         font-weight: bolder;
         justify-content:space-around;
+        align-items: center;
         }
 main .container{
     display: flex;
+ 
 }
