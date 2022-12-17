@@ -14,10 +14,11 @@
     justify-content:space-around;
     }
 
-.ambientesdigitais{
+.ambientesdigitais {
     color: rgb(17, 1, 1);
     font-size: 60px;
     font-weight: bolder;
+    justify-content: space-between;
     flex-direction: row; 
 }
 
