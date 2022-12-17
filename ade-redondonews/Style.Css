@@ -8,14 +8,14 @@
   }
 
 .menu {
-    background-color: rgba(50, 247, 11, 0.938);
-    color: white;
+    background-color: rgb(143, 207, 60);
+    color: rgba(41, 22, 124, 0.699);
     display: flex;
     justify-content:space-around;
     }
 
-.ambientesdigitais {
-    color: rgb(17, 1, 1);
+.midiasocial {
+    color: rgb(247, 252, 251);
     font-size: 60px;
     font-weight: bolder;
     justify-content: space-between;
@@ -37,10 +37,10 @@ header nav ul{
 }
 
     footer{
-        background-color: #06fc1a;
+        background-color: rgb(143, 207, 60);
         display: flex;
-        color: white;
-        font-size: 40px;
+        color: rgba(41, 22, 124, 0.952);
+        font-size:60px;
         font-weight: bolder;
         justify-content:flex-start;
         text-align: center;
@@ -58,9 +58,11 @@ main .container{
    
 .child{
   width:50%;
-  height:441px;
-  background-color: aquamarine;
+  height:490px;
+  background-color: rgb(13, 4, 66);
   border:1px solid black
-
+  
+  
+  
   
   }
