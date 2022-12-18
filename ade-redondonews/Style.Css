@@ -29,6 +29,8 @@
     
 }
 
+
+
 header nav ul{
     display: flex;
     font-size: 40px;
@@ -49,6 +51,7 @@ header nav ul{
 
 
 main .container{
+       
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -60,7 +63,7 @@ main .container{
 .child{
   width:50%;
   height:490px;
-  background-color: rgb(68, 60, 110);
+  background-color: rgba(75, 40, 158, 0.911);
   border:1px solid black  
  }
 
