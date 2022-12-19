@@ -27,7 +27,7 @@
   background-color: var(--marron);
   color: var(--branco);
 }
-.menu #logo{
+#logo{
     width: 390px;
 }
 .menu span {
@@ -97,6 +97,8 @@ button {
 .noticias{
 display: flex;
 margin-bottom: 10px;
+padding-bottom: 5px;
+border-bottom: 1px solid var(--abobora);
 }
 .noticias img{
   width: 400px;
