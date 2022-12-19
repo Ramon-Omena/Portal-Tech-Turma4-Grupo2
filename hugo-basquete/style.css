@@ -1,54 +1,125 @@
+:root {
+  --marron: #c34d39;
+  --branco: #ffffff;
+  --abobora: #f09635;
+}
+
 * {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    border: 0;
-  }
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  align-content: center;
+  box-sizing: border-box;
+  outline: none;
+  max-width: 1920px;
+}
 
 .menu {
-    background-color: #C34D39;
-    color: white;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    }
-
-.menu a{
-    color: white;
-    font-size: 30px;
-    font-weight: bolder;
-    padding: 10px;
-}
-.menu span{
-    font-size: 60px;
-    font-weight: bolder;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px 40px 0px 40px;
+  height: 100%;
+  background-color: var(--marron);
+  color: var(--branco);
 }
 
-header nav ul{
-    display: flex;
-    align-items: center;
-    background-color: #F09635;
-    justify-content: center;
-    gap: 20px;
-    
+.menu span {
+  font-size: 60px;
+  font-weight: bolder;
 }
 
-button{
-    background-color: #C34D39;
-    }
-    footer{
-        background-color: #C34D39;
-        display: flex;
-        color: white;
-        font-size: 30px;
-        font-weight: bolder;
-        justify-content:space-around;
-        align-items: center;
-        }
-main .container{
-    display: flex;
- 
+.buscar:hover {
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+.times nav ul {
+  display: flex;
+  align-items: center;
+  background-color: var(--abobora);
+  justify-content: center;
+  gap: 25px;
+}
+.times img {
+  width: 60px;
+}
+.redesociais a :hover{
+  transform: scale(1.1);
+  transition: all 0.5s;}
+
+.times nav ul :hover{
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+
+button {
+  background-color: var(--marron);
+}
+
+.banner-interativo {
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.titulos {
+  margin: 0 50px;
+  font-size: 32px;
+  font-weight: 800;
+  max-width: 1920px;
+}
+
+.area-videos {
+  border-top: 2px solid var(--marron);
+  margin: 50px;
+}
+
+.videos {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.video-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* até aqui ok!!!!*/
+.noticias{
+display: flex;
+margin-bottom: 10px;
+}
+.noticias img{
+  width: 400px;
+}
+
+.noticiasjogos{
+display: flex;
+justify-content: space-between;
+margin: 50px;
+border-top: 2px solid var(--marron);
+}
+.area-texto{
+padding: 10px;
+max-width: 400px;
+}
+
+
+
+footer {
+  background-color: var(--marron);
+  display: flex;
+  color: var(--branco);
+  font-size: 30px;
+  font-weight: bolder;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 250px;
 }
