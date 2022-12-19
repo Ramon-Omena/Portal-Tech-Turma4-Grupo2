@@ -5,27 +5,47 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-  }
+}
 
 .menu {
     background-color: rgb(143, 207, 60);
     color: rgba(41, 22, 124, 0.699);
     display: flex;
     justify-content:space-around;
-    }
+}
 
 .midiasocial {
     color: rgb(247, 252, 251);
-    font-size: 60px;
+    font-size: 100px;
     font-weight: bolder;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row; 
 }
 
 .menu span{
+
     font-size: 60px;
     font-weight: bolder;
+    justify-content: space-evenly;
+    
+}
+.flexbox-container{
+    background-color: rgb(143, 207, 60);
+    width: 100%;
+    height: 100%;
     justify-content: end;
+}
+
+.flexbox{
+    width: 45%;
+    height: 1300px;
+    background-color: rgb(91, 171, 236);
+    margin: 3%;
+    text-align: start;
+    justify-content:space-evenly;
+    position: absolute;
+    top: auto;
+    right: 0;
     
 }
 
@@ -33,13 +53,13 @@
 
 header nav ul{
     display: flex;
-    font-size: 40px;
-    background-color: #dddfde;
-    justify-content: space-evenly;
+    font-size: 20px;
+    background-color: #dfdfdd;
+    justify-content: space-around;
 }
 
     footer{
-        background-color: rgb(143, 207, 60);
+        background-color: rgb(133, 122, 163);
         display: flex;
         color: rgba(41, 22, 124, 0.952);
         font-size:60px;
@@ -47,23 +67,57 @@ header nav ul{
         justify-content:flex-start;
         text-align: center;
         align-content: center;
+
         }
+        
+
+img, p {
+    display: inline-block;
+    font-size: 60px;
+    
+}
+ 
+
+
 
 
 main .container{
-       
+             
     height: 100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-around;
         
 }
 
    
-.child{
+.child-1{      
   width:50%;
-  height:490px;
+  height:650%;
+  margin: 1%;
   background-color: rgba(75, 40, 158, 0.911);
-  border:1px solid black  
+  border:1px solid black; 
  }
 
+ .child-2{       
+    width:50%;
+    height:490%;
+    margin: 1%;
+    background-color: rgba(29, 74, 197, 0.911);
+    border:1px solid black;  
+ }
+
+
+.child-3{
+  width: 32.3%;
+  height:31vh;
+  margin: 1%;
+  background-color: rgba(60, 103, 122, 0.911);
+  border:1px solid black; 
+  display: inline-block;
+    
+  
+ }
+
+ 
