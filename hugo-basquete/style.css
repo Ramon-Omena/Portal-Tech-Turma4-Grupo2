@@ -23,12 +23,15 @@
   align-items: baseline;
   padding: 5px 40px 0px 40px;
   height: 100%;
+  max-height: 100px;
   background-color: var(--marron);
   color: var(--branco);
 }
-
+.menu #logo{
+    width: 390px;
+}
 .menu span {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bolder;
 }
 
