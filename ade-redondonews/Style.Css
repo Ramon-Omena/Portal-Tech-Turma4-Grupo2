@@ -1,0 +1,150 @@
+* {
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+}
+
+.menu {
+    background-color: rgb(143, 207, 60);
+    color: rgba(41, 22, 124, 0.699);
+    display: flex;
+    justify-content:space-around;
+}
+
+.midiasocial {
+    color: rgb(247, 252, 251);
+    font-size: max(50px, 2vw);
+    font-weight: bolder;
+    justify-content: space-between;
+    flex-direction: row; 
+}
+
+.menu span{
+
+    font-size: 60px;
+    font-weight: bolder;
+    justify-content: space-evenly;
+    
+}
+.flexbox-container{
+   
+    background-color: rgb(143, 207, 60);
+    width: 100%;
+    height: 100%;
+    max-width: 1700vw;
+    max-height: 2500vw;
+    justify-content: end;
+    
+    
+}
+
+.flexbox{
+    display: flex;
+    width: 45%;
+    height: 120%;
+    background-color: rgb(21, 12, 53);
+    margin: 4%;
+    text-align: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: auto;
+    right: 0;
+    
+}
+
+
+header nav ul{
+    display: flex;
+    font-size: max(50px, 2vw);
+    background-color: #dfdfdd;
+    justify-content: space-around;
+}
+
+    footer{
+        background-color: rgb(143, 207, 60);
+        display: flex;
+        color: rgba(41, 22, 124, 0.952);
+        font-size:60px;
+        font-weight: bolder;
+        justify-content:flex-start;
+        text-align: center;
+        align-content: center;
+        border-top: 8px solid white;     
+
+    }
+        
+
+p {      
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: white;
+    justify-content: flex-start;
+    
+    
+}
+
+main .container{
+    width: 100%;        
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    
+        
+}
+
+   
+.child-1{ 
+  justify-content: left;
+  display: flex;    
+  width: 48%;
+  height:48%;
+  margin: 1%;
+  padding: 8px;
+  background-color: rgba(13, 2, 114, 0.911);
+  border:1px solid black; 
+  
+}
+
+ .child-2{ 
+  justify-content: left;
+  display: flex;      
+  width:48%;
+  height:48%;
+  margin: 1%;
+  padding: 8px;
+  background-color: rgba(1, 21, 73, 0.911);
+  border:1px solid black;  
+}
+
+
+.child-3{
+  width: 25%;
+  height: 50%;
+  margin: 1%;
+  padding: 100px;
+  background-color: rgba(1, 9, 77, 0.911);
+  border:2px solid black; 
+  justify-items: center;
+
+}
+
+form{
+    color: white;
+    align-items: center;
+}
+
+
+h1{
+    color: rgb(48, 48, 88);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: max(50px, 2vw); 
+}
+
+
+
+ 
