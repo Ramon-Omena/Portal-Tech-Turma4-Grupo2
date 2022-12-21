@@ -176,18 +176,21 @@
 
                 <div class="enquete">
                     <h4>QUEM VENCE AMANHÃ?<h4>
-                        <ul>
-                          <input type="radio" name="time" id="SÃO PAULO">
-                          <label for="SÃO PAULO">SÃO PAULO</label>
-                          <input type="radio" name="time" id="FLABASQUETE">
-                          <label for="FLABASQUETE">FLABASQUETE</label>
-                        </ul>
+                        <form action="Dados_enquete">
+                            <input type="radio" name="time" id="SÃO PAULO">
+                            <label for="SÃO PAULO">SÃO PAULO</label>
+                            <input type="radio" name="time" id="FLABASQUETE">
+                            <label for="FLABASQUETE">FLABASQUETE</label>
+                            <input type="button" name="ENVIAR" id="Enviar">
+                            <label class="btn-enviar" for="Enviar">ENVIAR</label>
+                        </form>
+                        
                   </div>
 
             </section>
         </section>
 
-        <button>
+        <button class="btn">
             <a href="/index.html">Voltar</a>
         </button>
     </main>

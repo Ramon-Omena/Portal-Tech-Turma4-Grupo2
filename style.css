@@ -86,6 +86,9 @@ button {
   max-width: 1920px;
 }
 
+.area-tweets{
+margin-top: 60px;
+}
 
 .noticias{
 display: flex;

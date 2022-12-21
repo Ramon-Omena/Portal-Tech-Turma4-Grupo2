@@ -53,12 +53,14 @@
 .times nav ul a li {
   width: 100px;
 }
-
+.navegacao{
+  background-color: var(--abobora);
+}
 .navegacao nav ul {
   display: flex;
   align-items: center;
-  background-color: var(--abobora);
   justify-content: space-between;
+  width: 800px;
 }
 
 .navegacao li {
@@ -66,12 +68,12 @@
   padding: 0 10px;
   font-weight: bolder;
   font-size: 20px;
-  background-color: var(--abobora);
+  
 }
 
 .navegacao img {
   width: 60px;
-}
+} 
 
 .redesociais a :hover {
   transform: scale(1.1);
@@ -164,17 +166,25 @@ tbody td {
 .td-fim {
   border-collapse: collapse;
   border-bottom: 1px solid var(--abobora);
-  border-right: 1px solid var(--abobora);
+  border-right: 5px solid var(--abobora);
 }
 
 .enquete {
-  display: flex;
-  flex-direction: column;
+  display: block;
   padding: 40px;
   font-size: 20px;
 }
 
-button {
+.btn-enviar{
+  border: 1px solid #c34d39;
+  background-color: var(--marron);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 10%;
+}
+
+.btn {
   margin: 20px 50px;
   background-color: var(--marron);
   border-radius: 5px;
@@ -184,7 +194,7 @@ button {
   width: 10%;
 }
 
-button a {
+.btn a {
   color: var(--branco);
 }
 
