@@ -1,52 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap"     rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Redondo Esportes</title>
 </head>
+
 <body>
     <header>
-        <a href=""><img src="/ramon-futebol/img/Logo-verde.png"></a>
-        <form>
-            <label for="busca"></label>
-            <input type="search" id="busca" name="buscador" placeholder="Busque aqui">
-            <button type="submit"><img src="/hugo-basquete/img/img-icones/buscar.png"></button>
-        </form>
-        <nav>
-            <ul>
-                <a href="/ramon-futebol/ramon-futebol.html"><li>Futebol</li></a>
-                <a href="/hugo-basquete/hugo-basquete.html"><li>Basquete</li></a>
-                <a href="/rodrigo-volei/rodrigo-volei.html"><li>Vôlei</li></a>
-                <a href="ade-redondonews/ade-redondonews.html"><li>Mais Noticias</li></a>
-            </ul>
-        </nav>
+        <section class="area-menu">
+            <div class="menu">
+                <a href=""><img id="logo" src="/imagens/logo.svg" alt="Logo"></a>
+                <span>.</span>
+                <div class="redesociais">
+                    <a href="https://www.instagram.com/hugofsoares/"><img src="/imagens/Instagram.svg"></a>
+                    <a href="https://twitter.com/hugofs18"><img src="/imagens/Twitter.svg"></a>
+                    <a href="https://www.facebook.com/hugofs18"><img src="/imagens/Facebook.svg"></a>
+                </div>
+                <div class="buscar">
+                    <a href=""><img src="/imagens/buscar.svg" alt="Buscar"></a>
+                </div>
+            </div>
+        </section>
+        <section class="navegacao">
+            <nav>
+                <ul>
+                    <a href="/ramon-futebol/ramon-futebol.html"><li>Futebol</li></a>
+                    <a href="/hugo-basquete/hugo-basquete.html"><li>Basquete</li></a>
+                    <a href="/rodrigo-volei/rodrigo-volei.html"><li>Vôlei</li></a>
+                    <a href="ade-redondonews/ade-redondonews.html"><li>+Noticias</li></a>
+                </ul>
+            </nav>
+        </section>
         <section class="banner-interativo">
-            <a href=""><img src="/ramon-futebol/img/banner.png" alt="banner"></a>
+            <a href=""><img src="/imagens/banner.svg"  alt="banner"></a>
         </section>
     </header>
 
     <main>
-        <section class="noticias">
-            <h1>Noticias de esportes</h1>
-                <ul>
-                    <li><img src="/hugo-basquete/img/img-noticias/noticia1.jpeg" alt="noticia 1"></li>
-                    <li><img src="/hugo-basquete/img/img-noticias/noticia2.jpeg" alt="noticia 2"></p></li>
-                    <li><img src="/ramon-futebol/img/img-noticias/atletico-mg-renova-carlos-daniel.jpeg" alt="noticia 3"></p></li>
-                    <li><img src="/ramon-futebol/img/img-noticias/mario-fluminense.jpg" alt="noticia 4"></p></li>
-                </ul>
-        </section>  
+       
+        <section class="noticiasjogos">
+            <section class="area-noticias">
+                <section class="bloco-noticias">
+                    <h2 class="titulos">Notícias</h2>
+                    <article class="noticias">
+                        <img src="/hugo-basquete/img/noticia1.jpeg" alt="noticia 1">
+                        <div class="area-texto">
+                            <p><strong>FLABASQUETE TEM GRANDE ATUAÇÃO, VENCE PRIMEIRA E SE RECUPERA NA CHAMPIONS LEAGUE
+                                    AMERICAS</strong></p>
+                            <p>Rubo-Negro derrotou o Peñarol por 94 a 67</p>
+                            <p>14/12/2022 23:43h</p>
+                        </div>
+                    </article>
+                    <article class="noticias">
+                        <img src="/hugo-basquete/img/noticia2.jpeg" alt="noticia 2">
+                        <div class="area-texto">
+                            <p><strong>CORINTHIANS TEM CONFRONTO DIRETO CONTRA O MINAS E BUSCA MANTER SEQUÊNCIA POSITIVA
+                                    NO NBB</strong></p>
+                            <p>Meu timão jogo na proxima segunda feira, às 20h30</p>
+                            <p>19/12/2022 09:31h</p>
+                        </div>
+                    </article>
+                    <article class="noticias">
+                        <img src="/hugo-basquete/img/noticia3.jpeg" alt="noticia 3">
+                        <div class="area-texto">
+                            <p><strong>COM RECORDE DE TYRONE, BASQUETE TRICOLOR DERROTA O BRASÍLIA PELO NBB</strong></p>
+                            <p>Pivô bateu seu recorde de pontos em um jogo na vitória fora de casa do Tricolor</p>
+                            <p>17/12/2022 17:17h</p>
+                        </div>
+                    </article>
+
+                </section>
+            </section>
+
+            <section class="area-pjogos">
+                <h3 class="titulos">Próximos Jogos</h3>    
+                    <a href=""><img src="/hugo-basquete/img/proximosjogos.png" alt="Proximos jogos"></a>
+            </section>
+        </section>
+        <button>
+            <a href="/index.html">Ver Mais</a>
+        </button>
     </main>
 
     <footer>
-        <span><img src="/hugo-basquete/img/Logo-verde.png">redondoEsporte</span>
-        <ul>
-            <a href=""><li><img src="/hugo-basquete/img/Instagram.png" alt="instagran"></li>
-            <a href=""><li><img src="/hugo-basquete/img/Twitter.png" alt="twitter"></li>
-            <a href=""><li><img src="/hugo-basquete/img/Facebook.png" alt="facebook"></li>
-        </ul>
+        <a href=""><img id="logo" src="/imagens/logo.svg" alt="Logo"></a>
+        <div class="redesociais">
+            <a href=""><img src="/imagens/Instagram.svg"></a>
+            <a href=""><img src="/imagens/Twitter.svg"></a>
+            <a href=""><img src="/imagens/Facebook.svg"></a>
+        </div>
     </footer>
-    
+
 </body>
+
 </html>

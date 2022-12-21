@@ -1,81 +1,190 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/hugo-basquete/style.css">
     <title>Basquete | re</title>
 </head>
+
 <body>
     <header>
-        <div class="menu">
-            <a href=""><img src="/hugo-basquete/img/img-icones/menu.png"></a>
-        </div>
-        <a href="/index.html"><span><img src="/hugo-basquete/img/Logo-verde.png">RedondoEsporte</span></a>
-        <span>BASQUETE</span>
-        <form>
-            <label for="busca"></label>
-            <input type="search" id="busca" name="buscador" placeholder="Busque aqui">
-            <button type="submit"><img src="/hugo-basquete/img/img-icones/buscar.png"></button>
-        </form>
-
-        <nav>
-            <ul>
-                <a href=""><li><img src="/hugo-basquete/img/img-icones/bolabasquete.png"></li></a>
-                <a href=""><li><img src="/hugo-basquete/img/img-icones/bolabasquete.png"></li></a>
-                <a href=""><li><img src="/hugo-basquete/img/img-icones/bolabasquete.png"></li></a>
-                <a href=""><li><img src="/hugo-basquete/img/img-icones/bolabasquete.png"></li></a>
-                <a href=""><li><img src="/hugo-basquete/img/img-icones/bolabasquete.png"></li></a>
-                <a href=""><li><img src="/hugo-basquete/img/img-icones/bolabasquete.png"></li></a>
-                <a href=""><li><img src="/hugo-basquete/img/img-icones/bolabasquete.png"></li></a>
-                <a href=""><li><img src="/hugo-basquete/img/img-icones/bolabasquete.png"></li></a>
-                <a href=""><li><img src="/hugo-basquete/img/img-icones/bolabasquete.png"></li></a>
-                <a href=""><li><img src="/hugo-basquete/img/img-icones/bolabasquete.png"></li></a>
-            </ul>
-        </nav>
+        <section class="area-menu">
+            <div class="menu">
+                <a href=""><img id="logo" src="/hugo-basquete/img/Logo.svg" alt="Logo"></a>
+                <span>BASQUETE</span>
+                <div class="redesociais">
+                    <a href="https://www.instagram.com/hugofsoares/"><img src="/hugo-basquete/img/Instagram.svg"></a>
+                    <a href="https://twitter.com/hugofs18"><img src="/hugo-basquete/img/Twitter.svg"></a>
+                    <a href="https://www.facebook.com/hugofs18"><img src="/hugo-basquete/img/Facebook.svg"></a>
+                </div>
+                <div class="buscar">
+                    <a href=""><img src="/hugo-basquete/img/buscar.svg" alt="Buscar"></a>
+                </div>
+            </div>
+            <section class="times">
+                <nav>
+                    <ul>
+                        <a href="">
+                            <li><img src="/hugo-basquete/img/bolabasquete.svg"></li>
+                        </a>
+                        <a href="">
+                            <li><img src="/hugo-basquete/img/corinthians.png"></li>
+                        </a>
+                        <a href="">
+                            <li><img src="/hugo-basquete/img/flamengo.png"></li>
+                        </a>
+                        <a href="">
+                            <li><img src="/hugo-basquete/img/spfc.png"></li>
+                        </a>
+                        <a href="">
+                            <li><img src="/hugo-basquete/img/bolabasquete.svg"></li>
+                        </a>
+                    </ul>
+                </nav>
+            </section>
+        </section>
         <section class="banner-interativo">
             <a href=""><img src="/hugo-basquete/img/banner.png" alt="banner"></a>
         </section>
     </header>
 
     <main>
-        <section class="videos">
-            <h1>Videos dos Ultimos Jogos</h1>
-            <article>
-                <video src=""></video>
-            </article>                
-            <article>
-                <video src=""></video>
-            </article>    
-            <article>
-                <video src=""></video>
-            </article>
+        <section class="area-videos">
+            <h1 class="titulos">Videos dos Últimos Jogos</h1>
+            <div class="videos">
+                <article class="videos-gr">
+                    <iframe src="https://www.youtube.com/embed/wslRBeB_y7E?controls=0" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </article>
+                <article class="videos-2">
+                    <iframe src="https://www.youtube.com/embed/pt1D34phxCk?controls=0" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/eSYJFJSdcr8?controls=0" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </article>
+            </div>
         </section>
 
-        <section class="noticias">
-            <h1>Noticias</h1>
-             <article>
-                <p><img src="/hugo-basquete/img/img-noticias/noticia1.jpeg" alt="noticia 1"></p>
-             </article>
-             <article>
-                <p><img src="/hugo-basquete/img/img-noticias/noticia2.jpeg" alt="noticia 2"></p>
-             </article> 
+        <section class="noticiasjogos">
+            <section class="area-noticias">
+                <section class="bloco-noticias">
+                    <h2 class="titulos">Notícias</h2>
+                    <article class="noticias">
+                        <img src="/hugo-basquete/img/noticia1.jpeg" alt="noticia 1">
+                        <div class="area-texto">
+                            <p><strong>FLABASQUETE TEM GRANDE ATUAÇÃO, VENCE PRIMEIRA E SE RECUPERA NA CHAMPIONS LEAGUE
+                                    AMERICAS</strong></p>
+                            <p>Rubo-Negro derrotou o Peñarol por 94 a 67</p>
+                            <p>14/12/2022 23:43h</p>
+                        </div>
+                    </article>
+                    <article class="noticias">
+                        <img src="/hugo-basquete/img/noticia2.jpeg" alt="noticia 2">
+                        <div class="area-texto">
+                            <p><strong>CORINTHIANS TEM CONFRONTO DIRETO CONTRA O MINAS E BUSCA MANTER SEQUÊNCIA POSITIVA
+                                    NO NBB</strong></p>
+                            <p>Meu timão jogo na proxima segunda feira, às 20h30</p>
+                            <p>19/12/2022 09:31h</p>
+                        </div>
+                    </article>
+                    <article class="noticias">
+                        <img src="/hugo-basquete/img/noticia3.jpeg" alt="noticia 3">
+                        <div class="area-texto">
+                            <p><strong>COM RECORDE DE TYRONE, BASQUETE TRICOLOR DERROTA O BRASÍLIA PELO NBB</strong></p>
+                            <p>Pivô bateu seu recorde de pontos em um jogo na vitória fora de casa do Tricolor</p>
+                            <p>17/12/2022 17:17h</p>
+                        </div>
+                    </article>
+
+                </section>
+            </section>
+
+            <section class="area-pjogos">
+                <h3 class="titulos">Próximos Jogos</h3>
+                <table class="proximosjogos">
+                    <thead>
+                        <th>TIME</th>
+                        <th>DATA</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>São Paulo </td>
+                            <td>Amanhã</td>
+                        </tr>
+                        <tr>
+                            <td class="td-fim">FlaBasquete</td>
+                            <td class="td-fim">19:00hs</td>
+                        </tr>
+                        <tr>
+                            <td>Caxias do Sul</td>
+                            <td>Amanhã</td>
+                        </tr>
+                        <tr>
+                            <td class="td-fim">Pato Basquete</td>
+                            <td class="td-fim">19:00hs</td>
+                        </tr>
+                        <tr>
+                            <td>Minas</td>
+                            <td>Amanhã</td>
+                        </tr>
+                        <tr>
+                            <td class="td-fim">Rio Claro</td>
+                            <td class="td-fim">19:00hs</td>
+                        </tr>
+                        <tr>
+                            <td>Basquete Cearense</td>
+                            <td>Amanhã</td>
+                        </tr>
+                        <tr>
+                            <td class="td-fim">São Paulo</td>
+                            <td class="td-fim">20:30hs</td>
+                        </tr>
+                        <tr>
+                            <td>União Corinthians</td>
+                            <td>Sábado </td>
+                        </tr>
+                        <tr>
+                            <td class="td-fim">Corinthians</td>
+                            <td class="td-fim">10/12 15:00hs</td>
+                        </tr>
+                        <tr>
+                            <td>Pinheiros Basquete</td>
+                            <td>Terça</td>
+                        </tr>
+                        <tr>
+                            <td class="td-fim">Basquete Cearense</td>
+                            <td class="td-fim">13/12 19:00hs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </section>
 
-        <section>
-            <h2>Próximos Jogos</h2>
-            <img src="" alt="Proximos jogos"></a>
-        </section>    
+        <button>
+            <a href="/index.html">Voltar</a>
+        </button>
     </main>
 
     <footer>
-        <span><img src="/hugo-basquete/img/Logo-verde.png">redondoEsporte</span>
-        <ul>
-            <a href=""><li><img src="/hugo-basquete/img/Instagram.png" alt="instagran"></li>
-            <a href=""><li><img src="/hugo-basquete/img/Twitter.png" alt="twitter"></li>
-            <a href=""><li><img src="/hugo-basquete/img/Facebook.png" alt="facebook"></li>
-        </ul>
+        <a href=""><img id="logo" src="/hugo-basquete/img/Logo.svg" alt="Logo"></a>
+        <div class="redesociais">
+            <a href=""><img src="/hugo-basquete/img/Instagram.svg"></a>
+            <a href=""><img src="/hugo-basquete/img/Twitter.svg"></a>
+            <a href=""><img src="/hugo-basquete/img/Facebook.svg"></a>
+        </div>
     </footer>
-    
+
 </body>
 </html>
