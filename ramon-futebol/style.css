@@ -94,40 +94,37 @@ header #banner-interativo a img{
 
 /* main-noticias */
 
-main h1{
-    margin-left: 12%;
-    margin-bottom: 30px;
-    font-weight: 400;
-    font-size: 48px;
+.titulos {
+    margin: 0 50px;
+    font-size: 32px;
+    font-weight: 800;
+    max-width: 1920px;
 }
 
-
-
-main #noticias .img-noti {
-    width: 500px;
-    height: 300px;
-    margin-left: 12%;
-    border-radius: 3px;
-    
-}
-
-main #noticias p {
-    position: relative;
-    width: 300px;
-    height: 250px;
-    left: 510px;
-    margin-left: 12%;
-    bottom: 375px;
-    font-weight: 0;
-    font-size: 24px;
-    line-height: 36px;
+.noticias{
     display: flex;
-    align-items: center;
-    text-align:left;
-    color: #000000;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px;
+    }
+
+.noticias img{
+    width: 400px;
 }
 
-main #noticias aside {
+.noticiasjogos{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    border-top: 2px;
+    }
+
+.area-texto{
+    padding: 10px;
+    max-width: 400px;
+}
+    
+.area-brasileirao-a{
     position: absolute;
     height: 1080px;
     margin-left: 62%;
@@ -137,6 +134,11 @@ main #noticias aside {
     flex-direction: column;
     align-items: center;
 }
+
+
+
+
+
 
 
 /* footer */
