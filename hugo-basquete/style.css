@@ -48,11 +48,31 @@ background-color: var(--abobora);
   display: flex;
   align-items: center;
   justify-content: center;
- width: 50px;
+  width: 50px;
 }
 
 .times nav ul a li {
  width: 100px;
+}
+
+.navegacao nav ul {
+  display: flex;
+  align-items: center;
+  background-color: var(--abobora);
+  justify-content: space-between;
+}
+
+.navegacao li{
+  
+  color: var(--branco);
+  padding: 0 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: var(--abobora);
+}
+
+.navegacao img {
+  width: 60px;
 }
 
 .redesociais a :hover{
