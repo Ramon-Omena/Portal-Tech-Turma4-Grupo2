@@ -1,0 +1,103 @@
+* {
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    margin: 0;
+    padding:0;
+    border: 0;
+    list-style-type: none;
+    text-decoration: none;   
+}
+body {
+    background-color: rgba(127, 255, 234, 0.151);
+
+}
+header .fotoPrincipal {
+    position: normal;
+    width: 100%;
+    height: 85px;
+    background: #0c5e6c;
+}
+
+header .fotoPrincipal #titulo-da-pagina {
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    left: 40%;
+    top: 15px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+header .logo{ 
+    position: absolute;
+    width: 1020px;
+    margin-left: 5%;
+    margin-top: -85px;
+}
+header form {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 78%;
+    top: 12px;
+}
+
+header .buscador #busca {
+    border-radius: 12px;
+    height: 20px;
+
+}
+
+header form button {
+    background-color: #0c596c41;
+    border-radius:12px;
+}
+
+
+main section {
+    display:flex;
+    justify-content:space-around;
+}
+main h1, h2{
+    text-align:center;
+    color: #310c6c;
+}
+
+main aside{
+    display:flex;
+    justify-content:center;
+    width: 150;
+}
+
+div h3{
+       color: #310c6c;
+}   
+div h4{
+    text-align:right;
+    color: #310c6c;
+    display: flex;
+    justify-content:end;
+}
+
+div h4 ul{
+    text-align:right;
+    color: #000000;
+    
+}
+div h5{ 
+    color: #0c5e6c;
+    
+}
+main section video{
+    border-radius:12px;
+}
+
+
+
+section .sorteio{
+    border-radius: 40%;
+}
