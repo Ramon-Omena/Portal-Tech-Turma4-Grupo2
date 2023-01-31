@@ -89,7 +89,7 @@
         </section>
             <br> 
 
-            <div class="child-1">
+            <div class="caixa1">
                     <p><img src="/ade-redondonews/img/img-noticias/redondas.png" alt="redondas"height="25%" width="50%"></p> 
                     <br>         
                     <form action="mailto:redondonews@gmail.com" method="POST" enctype="text/plain">
@@ -117,6 +117,7 @@
             <span>RedondoNews</span>
             </section>      
         </footer>
+
         <div id="produtos">
 
         </div>
@@ -145,15 +146,18 @@
                 },
             ]
         inicializarLoja = () => {
-            var containerProdutos = document.getElementById("produtos");
+            var containerProdutos = document.getElementById('produtos');
             items.map((val)=>{
-                containerProdutos.innerHTML+= 
-            
+                containerProdutos.innerHTML+=  
+
                 <div class="produto-single">
                     <img src="'+val.img+'" />
                     <p>'+val.nome+'</p>
-                    <a key="'+val.+'" href="">adicionar ao carrinho!</a>
+                    <a key="'+val.id+'" href="#"> Adicionar ao carrinho!</a>
+
                 </div>
+
+                
             })
         }    
         inicializarLoja();
