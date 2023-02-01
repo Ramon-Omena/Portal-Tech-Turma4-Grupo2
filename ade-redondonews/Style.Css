@@ -29,14 +29,42 @@
     justify-content: space-evenly;
     
 }
+.noticias0 {
+    width: 50%;
+    height: 50%;
+    margin: 1%;
+    display: flex;
+        
+}
 
+.noticias1 {
+    width: 50%;
+    height: 10%;
+    margin: 1%;
+    display: flex;
+    
+    
+}
 
+.noticias2 {
+    width: 50%;
+    height: 10%;
+    margin: 1%;
+    display: flex
+    
+    
+    
+}
+#mais {
+    display:none
+}
 
 header nav ul{
     display: flex;
     font-size: max(30px, 2vw);
     background-color: #dfdfdd;
     justify-content: space-around;
+    
 }
 
     footer{
@@ -54,7 +82,7 @@ header nav ul{
         
 
 .caixa1{
-    width: 21.4%;
+    width: 19.5%;
     height: 55%;
     margin: 1%;
     padding: 100px;
