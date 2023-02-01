@@ -163,7 +163,7 @@ tbody td {
   padding: 0 10px;
 }
 
-.td-fim {
+tbody tr {
   border-collapse: collapse;
   border-bottom: 1px solid var(--abobora);
   border-right: 5px solid var(--abobora);
