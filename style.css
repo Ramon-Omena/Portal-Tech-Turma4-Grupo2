@@ -15,6 +15,7 @@
   box-sizing: border-box;
   outline: none;
   max-width: 1920px;
+
 }
 
 .menu {
@@ -101,6 +102,7 @@ button {
   opacity: 1;
 }
 /* carrossel */
+
 
 .titulos {
   margin: 0 50px;
