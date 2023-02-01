@@ -1,3 +1,8 @@
+:root {
+    --verdeescuro: #06AA48;
+    --branco: #FEFEFE;
+    --verdeclaro: #C1EAD2;
+  }
 * {
     font-family: 'Baloo Bhaijaan 2', sans-serif;
     margin: 0;
@@ -58,7 +63,7 @@ header nav ul{
     height: 55%;
     margin: 1%;
     padding: 100px;
-    background-color: #63be17;
+    background-color: var(--verdeescuro);
     border:2px solid black; 
     justify-items: center;
 
@@ -128,3 +133,61 @@ textarea.correct {
 .visible {
     display: block;
 }
+
+
+/*HUGO TESTE*/
+
+.noticias {
+    display: flex;
+    margin: 50px;
+    padding: 5px;
+    border-bottom: 1px solid var(--verdeclaro);
+  }
+  
+  .noticias img {
+    width: 400px;
+  }
+  
+  .area-noticiasjogos {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    border-top: 2px solid var(--verdeescuro);
+  }
+  
+  .area-texto {
+    padding: 10px;
+    max-width: 400px;
+    margin: 5px;
+  }
+
+
+  .btn {
+    margin: 20px 50px;
+    background-color: var(--verdeescuro);
+    border-radius: 5px;
+    padding: 0 30px;
+    font-size: 100%;
+    font-weight: 700;
+    width: 10%;
+  }
+  
+  .btn-enviar{
+  color: var(--branco);
+  }
+  .btn a {
+    color: var(--branco);
+  }
+  
+  footer {
+    background-color: var(--verdeescuro);
+    display: flex;
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: bolder;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 250px;
+  }
+  
