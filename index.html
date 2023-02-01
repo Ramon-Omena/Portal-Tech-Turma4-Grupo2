@@ -1,52 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Redondo Esportes</title>
 </head>
+
 <body>
     <header>
-        <a href=""><img src="/hugo-basquete/img/Logo-verde.png">RedondoEsporte</a>
-        <form>
-            <label for="busca"></label>
-            <input type="search" id="busca" name="buscador" placeholder="Busque aqui">
-            <button type="submit"><img src="/hugo-basquete/img/img-icones/buscar.png"></button>
-        </form>
-        <nav>
-            <ul>
-                <a href="/ramon-futebol/ramon-futebol.html"><li>Futebol</li></a>
-                <a href="/hugo-basquete/hugo-basquete.html"><li>Basquete</li></a>
-                <a href="/rodrigo-volei/rodrigo-volei.html"><li>Vôlei</li></a>
-                <a href="ade-redondonews/ade-redondonews.html"><li>Mais Noticias</li></a>
-            </ul>
-        </nav>
-        <section class="banner-interativo">
-            <a href=""><img src="/ramon-futebol/img/banner.png" alt="banner"></a>
+        <section class="area-menu">
+            <div class="menu">
+                <a href=""><img id="logo" src="/imagens/logo.svg" alt="Logo"></a>
+                <span></span>
+                <div class="redesociais">
+                    <a href="https://www.instagram.com/"><img src="/imagens/Instagram.svg"></a>
+                    <a href="https://twitter.com/"><img src="/imagens/Twitter.svg"></a>
+                    <a href="https://www.facebook.com/"><img src="/imagens/Facebook.svg"></a>
+                </div>
+                <div class="buscar">
+                    <a href=""><img src="/imagens/buscar.svg" alt="Buscar"></a>
+                </div>
+            </div>
+        </section>
+        <section class="navegacao">
+            <nav>
+                <ul>
+                    <a href="/ramon-futebol/ramon-futebol.html"><li>Futebol</li></a>
+                    <a href="/hugo-basquete/hugo-basquete.html"><li>Basquete</li></a>
+                    <a href="/rodrigo-volei/rodrigo-volei.html"><li>Vôlei</li></a>
+                    <a href="ade-redondonews/ade-redondonews.html"><li>News</li></a>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="banner">
+            <div class="banner-rotativo">
+                <a href=""><img class="selected" src="/hugo-basquete/img/noticia1.jpeg"  alt="banner1"></a>
+                <a href=""><img src="/ramon-futebol/img/img-noticias/dorival-junior-do-flamengo.jpeg"  alt="banner2"></a>
+                <a href=""><img src="/rodrigo-volei/IMG/suzano.webp"  alt="banner3"></a>
+                <a href=""><img src="/ade-redondonews/img/img-noticias/aboladavez.png"  alt="banner4"></a>
+            </div>
         </section>
     </header>
 
     <main>
-        <section class="noticias">
-            <h1>Noticias de esportes</h1>
-             <ul>
-                <li><img src="/hugo-basquete/img/img-noticias/noticia1.jpeg" alt="noticia 1"></li>
-                <li><img src="/hugo-basquete/img/img-noticias/noticia2.jpeg" alt="noticia 2"></p></li>
-                <li><img src="/ramon-futebol/img/img-noticias/atletico-mg-renova-carlos-daniel.jpeg" alt="noticia 3"></p></li>
-                <li><img src="/ramon-futebol/img/img-noticias/mario-fluminense.jpg" alt="noticia 4"></p></li>
-             </ul>
-        </section>  
+        <section class="noticiasjogos">
+            <section class="area-noticias">
+                <section class="bloco-noticias">
+                    <h2 class="titulos">Notícias</h2>
+                    <article class="noticias">
+                        <a href="/hugo-basquete/hugo-basquete.html"><img src="/hugo-basquete/img/noticia1.jpeg" alt="noticia 1"></a>
+                        <div class="area-texto">
+                            <p><strong>FLABASQUETE TEM GRANDE ATUAÇÃO, VENCE PRIMEIRA E SE RECUPERA NA CHAMPIONS LEAGUE AMERICAS</strong></p>
+                            <p>Na noite desta quarta-feira (14), o FlaBasquete foi em busca da sua primeira vitória na Champions League Americas, contra o Peñarol, e não decepcionou. Com atuação sólida do início ao fim, o Mais Querido controlou o jogo, venceu por 94 a 67 em Montevidéu e se recuperou na competição.</p>
+                            <p>14/12/2022 23h43</p>
+                        </div>
+                    </article>
+                    <article class="noticias">
+                        <a href="/ramon-futebol/ramon-futebol.html"><img src="/ramon-futebol/img/img-noticias/dorival-junior-do-flamengo.jpeg" alt="noticia 2"></a>
+                        <div class="area-texto">
+                            <p><strong>DORIVAL JÚNIOR DEIXA O COMANDO TÉCNICO DO FLAMENGO</strong></p>
+                            <p>Horas depois de vazar que o clube sondou o português Vitor Pereira, ex-Corinthians, Dorival comunicou que não vai mais seguir à frente do time carioca.</p>
+                            <p>19/12/2022 20h30</p>
+                        </div>
+                    </article>
+                    <article class="noticias">
+                        <a href="/rodrigo-volei/rodrigo-volei.html"><img src="/rodrigo-volei/IMG/suzano.webp" alt="noticia 3"></a>
+                        <div class="area-texto">
+                            <p><strong>SÃO JOSÉ É PUNIDO COM A PERDA DE CINCO PONTOS POR ESCALAÇÃO IRREGULAR NA SUPERLIGA</strong></p>
+                            <p>Decisão unânime aponta que time escalou irregularmente o oposto Sanchez e o ponteiro Taht na partida contra o Campinas; equipe contesta decisão e diz que atletas estavam aptos para o jogo.</p>
+                            <p>17/12/2022 17:17h</p>
+                        </div>
+                    </article>
+                    <article class="noticias">
+                        <a href="/ade-redondonews/ade-redondonews.html"><img src="/ade-redondonews/img/img-noticias/aboladavez.png" alt="noticia 3"></a>
+                        <div class="area-texto">
+                            <p><strong>Testosterona e futebol!</strong></p>
+                            <p>No esporte, o hormônio e seus derivados encabeçam a enorme lista de substâncias consideradas doping.</p>
+                            <p>17/12/2022 17:17h</p>
+                        </div>
+                    </article>
+
+                </section>
+            </section>
+
+            <section  class="area-tweets">
+                <div>
+                    <iframe scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 502px; height: 800px; display: block; flex-grow: 1;" title="Twitter Timeline" src="https://syndication.twitter.com/srv/timeline-profile/screen-name/blogdoesporte1?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOlsibGlua3RyLmVlIiwidHIuZWUiLCJ0ZXJyYS5jb20uYnIiLCJ3d3cubGlua3RyLmVlIiwid3d3LnRyLmVlIiwid3d3LnRlcnJhLmNvbS5iciJdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2hvcml6b25fdGltZWxpbmVfMTIwMzQiOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9lZGl0X2JhY2tlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3JlZnNyY19zZXNzaW9uIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2J1c2luZXNzX3ZlcmlmaWVkX2JhZGdlIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19jaGluX3BpbGxzXzE0NzQxIjp7ImJ1Y2tldCI6ImNvbG9yX2ljb25zIiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9yZXN1bHRfbWlncmF0aW9uXzEzOTc5Ijp7ImJ1Y2tldCI6InR3ZWV0X3Jlc3VsdCIsInZlcnNpb24iOm51bGx9LCJ0Zndfc2Vuc2l0aXZlX21lZGlhX2ludGVyc3RpdGlhbF8xMzk2MyI6eyJidWNrZXQiOiJpbnRlcnN0aXRpYWwiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2V4cGVyaW1lbnRzX2Nvb2tpZV9leHBpcmF0aW9uIjp7ImJ1Y2tldCI6MTIwOTYwMCwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19ibHVlX3ZlcmlmaWVkX2JhZGdlIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2dvdl92ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19idXNpbmVzc19hZmZpbGlhdGVfYmFkZ2UiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3R3ZWV0X2VkaXRfZnJvbnRlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfX0%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=pt&amp;maxHeight=600px&amp;origin=https%3A%2F%2Fwww.blogdoesporte.net%2F&amp;sessionId=1718501f96cf9f901dc948dc4b3cc61973a9ef38&amp;showHeader=true&amp;showReplies=false&amp;transparent=false&amp;widgetsVersion=a3525f077c700%3A1667415560940"></iframe>    
+                </div>
+                <div>
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fblogdoesporte%2Fposts%2F2714789178545494&amp;width=500" width="502" height="223" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </section>
+
+        </section>
+        <button>
+            <a href="/index.html">Ver Mais</a>
+        </button>
     </main>
 
     <footer>
-        <span><img src="/hugo-basquete/img/Logo-verde.png">redondoEsporte</span>
-        <ul>
-            <a href=""><li><img src="/hugo-basquete/img/Instagram.png" alt="instagran"></li>
-            <a href=""><li><img src="/hugo-basquete/img/Twitter.png" alt="twitter"></li>
-            <a href=""><li><img src="/hugo-basquete/img/Facebook.png" alt="facebook"></li>
-        </ul>
+        <a href=""><img id="logo" src="/imagens/logo.svg" alt="Logo"></a>
+        <div class="redesociais">
+            <a href="https://www.instagram.com/"><img src="/imagens/Instagram.svg"></a>
+            <a href="https://twitter.com/"><img src="/imagens/Twitter.svg"></a>
+            <a href="https://www.facebook.com/"><img src="/imagens/Facebook.svg"></a>
+        </div>
     </footer>
-    
+
 </body>
+
 </html>
