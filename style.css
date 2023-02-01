@@ -15,7 +15,7 @@
   box-sizing: border-box;
   outline: none;
   max-width: 1920px;
- 
+
 }
 
 .menu {
@@ -75,9 +75,34 @@ button {
   background-color: var(--preto);
 }
 
-.banner-interativo img {
-  width:100%
-   }
+/* carrossel */
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-rotativo {
+  width: 100%;
+  height: 35vw;
+  max-height: 550px;
+  position: relative;
+}
+
+.banner-rotativo img{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: opacity 2s;
+}
+
+.banner-rotativo img.selected{
+  opacity: 1;
+}
+/* carrossel */
+
 
 .titulos {
   margin: 0 50px;

@@ -10,7 +10,7 @@
 /* inicio-cabecalho */
 
 header .cabecalho {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 92px;
     background: #0F6C0C;
@@ -64,14 +64,15 @@ header .buscador #busca {
 
 /* inicio-nav */
 header nav ul {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: #299125;
 
     width: 100%;
-    height: 110px;
+    height: 112px;
+    top: 92px;
 }
 
 header nav ul li {
@@ -83,81 +84,59 @@ header nav ul li {
 /* fim-cabecalho */
 
 /* banner */
-/* carrossel */
-.banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner-rotativo {
+header #banner-interativo a img{
+    
+    margin-top: 240px;
     width: 100%;
-    height: 35vw;
-    max-height: 550px;
-    position: relative;
-}
+    
 
-.banner-rotativo img{
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    transition: opacity 2s;
 }
-
-.banner-rotativo img.selected{
-    opacity: 1;
-}
-  /* carrossel */
 
 /* main-noticias */
 
-.titulos {
-    margin: 0 50px;
-    font-size: 32px;
-    font-weight: 800;
-    max-width: 1920px;
+main h1{
+    margin-left: 12%;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 48px;
 }
 
-.noticias{
-    display: flex;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px;
-    }
 
-.noticias img{
-    width: 400px;
-}
 
-.noticiasjogos{
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
-    border-top: 2px;
-    }
-
-.area-texto{
-    padding: 10px;
-    max-width: 400px;
-}
+main #noticias .img-noti {
+    width: 500px;
+    height: 300px;
+    margin-left: 12%;
+    border-radius: 3px;
     
-.area-brasileirao-a{
+}
+
+main #noticias p {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    left: 510px;
+    margin-left: 12%;
+    bottom: 375px;
+    font-weight: 0;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align:left;
+    color: #000000;
+}
+
+main #noticias aside {
     position: absolute;
     height: 1080px;
     margin-left: 62%;
-    top: 800px;
+    top: 1000px;
     margin-right: 12%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
-
-
-
 
 
 /* footer */
