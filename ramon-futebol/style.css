@@ -1,86 +1,119 @@
+:root {
+  --verdeescuro: #06AA48;
+  --branco: #FEFEFE;
+  --verdeclaro: #C1EAD2;
+}
+
 * {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style: none;
-    text-decoration: none;   
+  font-family: "Baloo Bhaijaan 2", cursive;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  align-content: center;
+  box-sizing: border-box;
+  outline: none;
+  max-width: 1920px;
 }
 
-/* inicio-cabecalho */
-
-header .cabecalho {
-    position: relative;
-    width: 100%;
-    height: 92px;
-    background: #0F6C0C;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px 40px 0px 40px;
+  max-height: 100%;
+  background-color: var(--verdeescuro);
+  color: var(--branco);
 }
 
-header .cabecalho #titulo-da-pagina {
+
+
+.menu span {
+  font-size: 50px;
+  font-weight: bolder;
+}
+ 
+.navegacao{
+  border: 1px solid var(--branco);
+  background-color: var(--verdeclaro);
+}
+
+.navegacao img {
+  width: 60px;
+}
+.navegacao nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.navegacao li {
+  color: black;
+  padding: 0 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: var(--verdeclaro);
+}
+
+.btn {
+  margin: 20px 50px;
+  background-color: var(--verdeescuro);
+  border-radius: 5px;
+  padding: 0 30px;
+  font-size: 100%;
+  font-weight: 700;
+  width: 10%;
+}
+
+.btn a {
+  color: var(--branco);
+}
+
+/*------hover------*/
+.buscar:hover {
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+
+.redesociais a :hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.navegacao nav ul :hover{
+  transform: scale(1.3);
+  transition: all 0.5s;
+  border: 1px solid var(--branco);
+  }
+  .times{
+    background-color: var(--verdeescuro);
+    border: 1px solid var(--branco);
     
-    position: absolute;
-    width: 371px;
-    height: 54px;
-    left: 40%;
-    top: 15px;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 72px;
-    text-align: center;
-
-    color: #FFFFFF;
-}
-
-header .logo{ 
-    position: absolute;
-    width: 348px;
-    height: 74px;
-    margin-left: 12%;
-    margin-top: 10px;
-    font-size: 36px;
-}
-
-/* buscador */
-header form {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 78%;
-    top: 12px;
+    }
     
+    .times nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+    }
+    
+    .times nav ul a li {
+      width: 100px;
+    }
+/*----fim---hover----*/
+footer {
+  background-color: var(--verdeescuro);
+  display: flex;
+  color: var(--branco);
+  font-size: 30px;
+  font-weight: bolder;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 250px;
 }
-
-header form button {
-    background-color: #0F6C0C;
-}
-
-header .buscador #busca {
-    border-radius: 5px;
-    height: 30px;
-}
-/* buscador */
-
-/* inicio-nav */
-header nav ul {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #299125;
-
-    width: 100%;
-    height: 110px;
-}
-
-header nav ul li {
-    margin-top: 10px;
-    margin-right: 40px;
-}
-/* final-nav */
-
-/* fim-cabecalho */
 
 /* banner */
 /* carrossel */
@@ -143,45 +176,8 @@ header nav ul li {
     max-width: 400px;
 }
     
-.area-brasileirao-a{
-    position: absolute;
-    height: 1080px;
-    margin-left: 62%;
-    top: 800px;
-    margin-right: 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 
 
 
-
-
-/* footer */
-
-footer {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    background-color: #0F6C0C;
-    justify-content: space-between;
-}
-
-footer ul {
-    display: flex;
-    flex-direction:row;
-    margin-top: 30px;
-}
-
-footer .logo {
-    margin-top: 10px;
-    margin-left: 12%;
-}
-
-footer .redes {
-    margin-right: 12%;
-}

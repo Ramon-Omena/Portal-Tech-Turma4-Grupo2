@@ -6,7 +6,7 @@
 
 * {
   font-family: "Baloo Bhaijaan 2", sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   text-decoration: none;
@@ -34,24 +34,28 @@
   font-weight: bolder;
 }
 
+.navegacao{
+  border: 1px solid var(--branco);
+  background-color: var(--verdeclaro);
+}
+
+.navegacao img {
+  width: 60px;
+}
 .navegacao nav ul {
   display: flex;
   align-items: center;
-  background-color: var(--verdeclaro);
-  justify-content: center;
-  gap: 80px;
-
+  justify-content: space-between;
+  width: 800px;
 }
 
-.navegacao li{
-  
+.navegacao li {
   color: black;
   padding: 0 10px;
   font-weight: bolder;
   font-size: 20px;
   background-color: var(--verdeclaro);
 }
-
 .times{
   background-color: var(--verdeescuro);
 }

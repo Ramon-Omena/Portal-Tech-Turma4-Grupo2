@@ -27,18 +27,9 @@
   color: var(--branco);
 }
 
-.logo {
-  width: 390px;
-}
-
 .menu span {
   font-size: 50px;
   font-weight: bolder;
-}
-
-.buscar:hover {
-  transform: scale(1.3);
-  transition: all 0.5s;
 }
 
 .times{
@@ -51,7 +42,7 @@ border: 1px solid var(--branco);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
+  width: 50%;
 }
 
 .times nav ul a li {
@@ -61,12 +52,15 @@ border: 1px solid var(--branco);
   border: 1px solid var(--branco);
   background-color: var(--verdeclaro);
 }
+
+.navegacao img {
+  width: 60px;
+}
 .navegacao nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 800px;
-  
 }
 
 .navegacao li {
@@ -75,23 +69,8 @@ border: 1px solid var(--branco);
   font-weight: bolder;
   font-size: 20px;
   background-color: var(--verdeclaro);
-  
 }
-
-.navegacao img {
-  width: 60px;
-} 
-
-.redesociais a :hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
-}
-
-.navegacao nav ul :hover{
-  transform: scale(1.3);
-  transition: all 0.5s;
-  border: 1px solid var(--branco);
-}
+ 
 
 .titulos {
   margin: 0 50px;
@@ -202,7 +181,24 @@ color: var(--branco);
 .btn a {
   color: var(--branco);
 }
+/*-----hover-----*/
 
+.redesociais a :hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.navegacao nav ul :hover{
+  transform: scale(1.3);
+  transition: all 0.5s;
+  border: 1px solid var(--branco);
+}
+
+.buscar:hover {
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+/*----fim---hover----*/
 footer {
   background-color: var(--verdeescuro);
   display: flex;
