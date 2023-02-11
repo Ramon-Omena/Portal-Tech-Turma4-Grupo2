@@ -15,7 +15,6 @@ function leiaMais(){
   }
 }
 
-
 // ---------- FUNÇÕES GERAIS -------------- //
 function togglePopup(input, label) {
   // Mostrar popup de campo obrigatório
