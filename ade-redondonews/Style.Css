@@ -1,158 +1,221 @@
-* {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-    margin: 0;
+:root {
+    --verdeescuro: #06AA48;
+    --branco: #fefefe;
+    --verdeclaro: #C1EAD2;
+  }
+  
+  * {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    margin: 0 auto;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    border: 0;
-}
-
-.menu {
-    background-color: #63be17;
-    color: rgba(41, 22, 124, 0.699);
+    border: none;
+    align-content: center;
+    box-sizing: border-box;
+    outline: none;
+    max-width: 1920px;
+  
+  }
+  
+  .menu {
     display: flex;
-    justify-content:space-around;
-}
-
-.midiasocial {
-    color: rgb(247, 252, 251);
-    font-size: max(50px, 2vw);
-    font-weight: bolder;
     justify-content: space-between;
-    flex-direction: row; 
-}
-
-.menu span{
-
-    font-size: 60px;
+    align-items: baseline;
+    padding: 5px 40px 0px 40px;
+    height: 100%;
+    max-height: 100px;
+    background-color: var(--verdeescuro);
+    color: var(--branco);
+  }
+  
+  .menu span {
+    font-size: 50px;
     font-weight: bolder;
-    justify-content: space-evenly;
-    
-}
-.noticias0 {
-    width: 50%;
-    height: 50%;
-    margin: 1%;
+  }
+  
+  .navegacao{
+    border: 1px solid var(--branco);
+    background-color: var(--verdeclaro);
+  }
+  
+  .navegacao img {
+    width: 60px;
+  }
+  .navegacao nav ul {
     display: flex;
-        
-}
-
-.noticias1 {
-    width: 50%;
-    height: 10%;
-    margin: 1%;
-    display: flex;
-    
-    
-}
-
-.noticias2 {
-    width: 50%;
-    height: 10%;
-    margin: 1%;
-    display: flex
-    
-}
-
-
-#mais {
-    display:none
-}
-
-header nav ul{
-    display: flex;
-    font-size: max(30px, 2vw);
-    background-color: #dfdfdd;
-    justify-content: space-around;
-    
-}
-
-    footer{
-        background-color: #63be17;
-        display: flex;
-        color: rgba(41, 22, 124, 0.952);
-        font-size:60px;
-        font-weight: bolder;
-        justify-content:flex-start;
-        text-align: center;
-        align-content: center;
-        border-top: 8px solid white;     
-
-    }
-        
-
-.caixa1{
-    width: 19.5%;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+  }
+  
+  .navegacao li {
+    color: black;
+    padding: 0 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: var(--verdeclaro);
+  }
+  .times{
+    background-color: var(--verdeescuro);
+  }
+   
+  .times nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      padding: 5px 0 ;
+      margin: auto;
+  }
+  .times li img {
+  padding: 0  10px;
+  align-items: center;
+  max-width: 100%;
+  align-items: center;
+  }  
+  
+  .banner-interativo img {
+  width: 100%;
+  }
+  
+  .caixa1{
+    width: 21.4%;
     height: 55%;
     margin: 1%;
     padding: 100px;
-    background-color: #63be17;
+    background-color: var(--verdeescuro);
     border:2px solid black; 
     justify-items: center;
-
-}
-
-form{
+  }
+  
+  .area-noticias-caixa {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    border-top: 2px solid var(--verdeescuro);
+  }
+  
+  .noticias {
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--verdeclaro);
+  }
+  
+  .noticias img {
+    width: 500px;
+  }
+  
+  
+  .area-texto  p {
+    padding: 10px;
+    max-width: 50px;
+  }
+  .caixa1{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  }
+  .caixa1 img{
+    max-width: 150%;
+  }
+  form{
     color: white;
     align-items: center;
-}
-
-form label {
+  }
+  
+  form label {
     display: block;
-}
-
-h1{
-    color: rgb(48, 48, 88);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    font-size: max(50px, 2vw); 
-}
-
-/*--------------estilos-da-validacao--------------*/
-
-.helper-text {
+  }  
+  
+  footer {
+    background-color: var(--verdeescuro);
+    display: flex;
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: bolder;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 250px;
+  }
+  .btn {
+    margin: 20px 50px;
+    background-color: var(--verdeescuro);
+    border-radius: 5px;
+    padding: 0 30px;
+    font-size: 100%;
+    font-weight: 700;
+    width: 10%;
+  }
+  
+  .btn a {
+    color: var(--branco);
+    }
+  
+   /*-----hover-----*/
+   .buscar:hover {
+    transform: scale(1.3);
+    transition: all 0.5s;
+  }
+  .redesociais a :hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+  }
+  .navegacao nav ul :hover{
+  transform: scale(1.3);
+  transition: all 0.5s;
+  border: 1px solid var(--branco);
+  }
+  /*-----hover-----*/
+  
+  /*--------------estilos-da-validacao--------------*/
+  
+  .helper-text {
     display: none;
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: darkred;
-}
-
-.required-popup::after {
+  }
+  
+  .required-popup::after {
     content: "*Campo obrigatório";
     position: absolute;
     top: 0;
     right: 0;
-    color: #DFDFDF;
-    font-size: .65rem;
-    padding: .2rem .3rem;
+    color: #dfdfdf;
+    font-size: 0.65rem;
+    padding: 0.2rem 0.3rem;
     width: auto;
     display: block;
     background-color: #202020;
-}
-
-input.error {
+  }
+  
+  input.error {
     border: solid 2px #992020;
-    background-color: #CCBBBB;
+    background-color: #ccbbbb;
     color: #662020;
-}
-
-input.correct {
-    background-color: #BBCCBB;
+  }
+  
+  input.correct {
+    background-color: #bbccbb;
     border: solid 2px #206620;
     color: #206620;
-}
-
-textarea.error {
+  }
+  
+  textarea.error {
     border: solid 2px #992020;
-    background-color: #CCBBBB;
+    background-color: #ccbbbb;
     color: #662020;
-}
-
-textarea.correct {
-    background-color: #BBCCBB;
+  }
+  
+  textarea.correct {
+    background-color: #bbccbb;
     border: solid 2px #206620;
     color: #206620;
-}
-
-.visible {
+  }
+  
+  .visible {
     display: block;
-}
+  }
