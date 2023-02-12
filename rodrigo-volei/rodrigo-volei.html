@@ -10,23 +10,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/rodrigo-volei/RodrigoStyle.css">
+  <link rel="stylesheet" href="/style_padrao.css">
+  <script src="/rodrigo-volei/Rodrigo.js" defer></script>
   <title>Vôlei</title>
 </head>
 
 <body>
-  <header>
-    <div class="fotoPrincipal">
-      <span class="logo"><img src="/rodrigo-volei/IMG/Logo-verde.png"></span></a>
-      <span id="titulo-da-pagina">VOLEI</span>
+    <header>
+        <section class="area-menu">
+            <div class="menu">
+                <a href="/index.html"><img id="logo" src="/rodrigo-volei/IMG/logo.svg" alt="Logo"></a>
+                <span>Vôlei</span>
+                <div class="redesociais">
+                    <a href="https://www.instagram.com/"><img src="/rodrigo-volei/IMG/Instagram.svg"></a>
+                    <a href="https://twitter.com/"><img src="/rodrigo-volei/IMG/Twitter.svg"></a>
+                    <a href="https://www.facebook.com/"><img src="/rodrigo-volei/IMG//Facebook.svg"></a>
+                </div>
+                <div class="buscar">
+                    <a href=""><img src="/rodrigo-volei/IMG/buscar.svg" alt="Buscar"></a>
+                </div>
+            </div>
 
-      <form>
-        <label for="busca"></label>
-        <input type="search" id="busca" name="buscador" placeholder="Escreva sua busca">
-        <button type="submit"><img src="/rodrigo-volei/IMG/enviar.jpg"></button>
-      </form>
-    </div>
-
-  </header>
+                <section class="navegacao">
+                    <nav>
+                        <ul>
+                            <a href="/index.html"><li>Inicio</li></a>
+                            <a href="/ramon-futebol/ramon-futebol.html"><li>Futebol</li></a>
+                            <a href="/hugo-basquete/hugo-basquete.html"><li>Basquete</li></a>
+                            <a href="/rodrigo-volei/rodrigo-volei.html"><li>Vôlei</li></a>
+                            <a href="/ade-redondonews/ade-redondonews.html"><li>News</li></a>
+                        </ul>
+                    </nav>
+                </section>
+                
+        </section>
+    </header>
   <main>
     <h1>Melhores Momentos :</h1>
     <section class="video">
@@ -35,7 +53,7 @@
         <source src="/rodrigo-volei/VÍDEOS/vídeo1.mp4" type="video/mp4">
       </video>
       <video width="20%" controls>
-        <source src="/rodrigo-volei/VÍDEOS/vídeo2.mp4" type="video/mp4">
+        <source src="/rodrigo-volei//VÍDEOS/vídeo2.mp4" type="video/mp4">
       </video>
       <video width="20%" controls>
         <source src="/rodrigo-volei/VÍDEOS/vídeo3.mp4" type="video/mp4">
@@ -51,12 +69,10 @@
         <p><b>De virada, Suzano vence o líder Minas e embala na Superliga masculino.</b></p>
       </aside>
 
-
       <aside>
         <p><img src="/rodrigo-volei/IMG/sao jose.webp" alt="noticia 2" width="50%"></p>
         <p><b>São José é punido com a perda de cinco pontos por escalação irregular na Superliga.</b></p>
       </aside>
-
 
       <aside>
         <p><img src="/rodrigo-volei/IMG/araguari.webp" alt="noticia 3" width="50%"></p>
@@ -65,60 +81,56 @@
     </div>
 
 
+    <div class="enquete">
+      <h4 action="">
+        <p id="tit"></p><b> QUAL O MELHOR TIME ?</b></p>
+        <br><br>
+        <div>
+          <input type="radio" name="time" id="BRASIL">
+          <label for="brasil">BRASIL</label>
+          <br><br>
+          <input type="radio" name="time" id="ARGENTINA">
+          <label for="Argentina">ARGENTINA</label>
+          <br><br>
+          <input type="radio" name="time" id="FRANÇA">
+          <label for="FRANÇA">FRANÇA</label>
+          <br><br>
+
+          <button type="submit">Enviar</button>
+      </h4>
+    </div>
     <div>
-      <h3><b>PRÓXIMOS JOGOS:</b></h3>
-      <ul>
-        <li><b>BRASIL X ARGENTINA</b></li>
-        <li><b>EQUADOR X CHILE</b></li>
-        <li><b>EUA X MÉXICO</b></li>
-      </ul>
-    </div>
-
-    <div id="enquete">
-      <h4><b> QUAL O MELHOR TIME ?</b>
-        <h4>
-          <ul>
-            <input type="radio" name="time" id="BRASIL">
-            <label for="brasil">BRASIL</label>
-            <input type="radio" name="time" id="ARGENTINA">
-            <label for="Argentina">ARGENTINA</label>
-            <input type="radio" name="time" id="FRANÇA">
-            <label for="FRANÇA">FRANÇA</label>
-          </ul>
-    </div>
-
-    <div class="sorteio">
-      <h5><b>PREENCHA PARA O SORTEIO :</b></h5>
-
       <form action="">
-        <label for="nome"><b>Nome</b></label>
-        <input id="nome" type="name" name="nome">
-      </form>
+        <h3>Preencha para o Sorteio</h3>
+        <br>
+        <label for="nome">*Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
+        <br>
+        <label for="email">*Email:</label>
+        <input type="email" id="email" name="email">
+        <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+        <br>
+        <label for="mensagem">*Mensagem</label>
+        <textarea id="mensagem" rows="2"></textarea><br>
+        <p id="msg-helper" class="helper-text">Mensagem de ajuda</p>
 
-      <form action="">
-        <label for="email"><b>Email</b></label>
-        <input id="email" type="email" name="email">
-
-      </form>
-
-      <form action="">
-        <label for="password"><b>Password</b></label>
-        <input id="password" type="password" name="password" maxlength="6">
-      </form>
-
-      <form action="">
-        <label for="telefone"><b>Telefone</b></label>
-        <input id="telefone" type="number" name="telefone">
+        <button type="submit">Enviar</button>
       </form>
     </div>
+        <button class="btn">
+            <a href="/index.html">Voltar</a>
+        </button>
+    </main>
 
-  </main>
-
-  <footer>
-    <span><b>RedondoEsporte</b></span>
-
-    <a href="/index.html"><span><b>Voltar</b></span></a>
-  </footer>
+    <footer>
+        <a href=""><img id="logo" src="/rodrigo-volei/IMG/Logo.svg" alt="Logo"></a>
+        <div class="redesociais">
+            <a href="https://www.instagram.com/"><img src="/rodrigo-volei/IMG/Instagram.svg"></a>
+            <a href="https://twitter.com/"><img src="/rodrigo-volei/IMG/Twitter.svg"></a>
+            <a href="https://www.facebook.com/"><img src="/rodrigo-volei/IMG/Facebook.svg"></a>
+        </div>
+    </footer>
 </body>
 
 </html>

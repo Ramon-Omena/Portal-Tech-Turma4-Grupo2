@@ -1,187 +1,109 @@
+:root {
+  --verdeescuro: #06aa48;
+  --branco: #fefefe;
+  --verdeclaro: #c1ead2;
+}
+
 * {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style: none;
-    text-decoration: none;   
+  font-family: "Baloo Bhaijaan 2", cursive;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  align-content: center;
+  box-sizing: border-box;
+  outline: none;
+  max-width: 1920px;
 }
 
-/* inicio-cabecalho */
-
-header .cabecalho {
-    position: relative;
-    width: 100%;
-    height: 92px;
-    background: #0F6C0C;
+.btn {
+  margin: 20px 50px;
+  background-color: var(--verdeescuro);
+  border-radius: 5px;
+  padding: 0 30px;
+  font-size: 100%;
+  font-weight: 700;
+  width: 10%;
 }
 
-header .cabecalho #titulo-da-pagina {
-    
-    position: absolute;
-    width: 371px;
-    height: 54px;
-    left: 40%;
-    top: 15px;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 72px;
-    text-align: center;
-
-    color: #FFFFFF;
+.btn a {
+  color: var(--branco);
 }
 
-header .logo{ 
-    position: absolute;
-    width: 348px;
-    height: 74px;
-    margin-left: 12%;
-    margin-top: 10px;
-    font-size: 36px;
+.times {
+  background-color: var(--verdeescuro);
+  border: 1px solid var(--branco);
 }
 
-/* buscador */
-header form {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 78%;
-    top: 12px;
-    
+.times nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 
-header form button {
-    background-color: #0F6C0C;
+.times nav ul a li {
+  width: 100px;
 }
-
-header .buscador #busca {
-    border-radius: 5px;
-    height: 30px;
-}
-/* buscador */
-
-/* inicio-nav */
-header nav ul {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #299125;
-
-    width: 100%;
-    height: 110px;
-}
-
-header nav ul li {
-    margin-top: 10px;
-    margin-right: 40px;
-}
-/* final-nav */
-
-/* fim-cabecalho */
 
 /* banner */
 /* carrossel */
-.banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-rotativo {
-    width: 100%;
-    height: 35vw;
-    max-height: 550px;
-    position: relative;
+  width: 100%;
+  height: 35vw;
+  max-height: 550px;
+  position: relative;
 }
 
-.banner-rotativo img{
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    transition: opacity 2s;
+.banner-rotativo img {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: opacity 2s;
 }
 
-.banner-rotativo img.selected{
-    opacity: 1;
+.banner-rotativo img.selected {
+  opacity: 1;
 }
-  /* carrossel */
+/* carrossel */
 
 /* main-noticias */
 
 .titulos {
-    margin: 0 50px;
-    font-size: 32px;
-    font-weight: 800;
-    max-width: 1920px;
+  margin: 0 50px;
+  font-size: 32px;
+  font-weight: 800;
+  max-width: 1920px;
 }
 
-.noticias{
-    display: flex;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px;
-    }
-
-.noticias img{
-    width: 400px;
+.noticias {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px;
 }
 
-.noticiasjogos{
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
-    border-top: 2px;
-    }
-
-.area-texto{
-    padding: 10px;
-    max-width: 400px;
-}
-    
-.area-brasileirao-a{
-    position: absolute;
-    height: 1080px;
-    margin-left: 62%;
-    top: 800px;
-    margin-right: 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.noticias img {
+  width: 400px;
 }
 
-
-
-
-
-
-
-/* footer */
-
-footer {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    background-color: #0F6C0C;
-    justify-content: space-between;
+.noticiasjogos {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  border-top: 2px;
 }
 
-footer ul {
-    display: flex;
-    flex-direction:row;
-    margin-top: 30px;
-}
-
-footer .logo {
-    margin-top: 10px;
-    margin-left: 12%;
-}
-
-footer .redes {
-    margin-right: 12%;
+.area-texto {
+  padding: 10px;
+  max-width: 400px;
 }

@@ -1,130 +1,157 @@
+:root {
+  --verdeescuro: #06AA48;
+  --branco: #fefefe;
+  --verdeclaro: #C1EAD2;
+}
+
 * {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    border: 0;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  align-content: center;
+  box-sizing: border-box;
+  outline: none;
+  max-width: 1920px;
+
 }
 
-.menu {
-    background-color: #63be17;
-    color: rgba(41, 22, 124, 0.699);
+.times{
+  background-color: var(--verdeescuro);
+}
+ 
+.times nav ul {
     display: flex;
-    justify-content:space-around;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 5px 0 ;
+    margin: auto;
 }
+.times li img {
+padding: 0  10px;
+align-items: center;
+max-width: 100%;
+align-items: center;
+}  
 
-.midiasocial {
-    color: rgb(247, 252, 251);
-    font-size: max(50px, 2vw);
-    font-weight: bolder;
-    justify-content: space-between;
-    flex-direction: row; 
+.banner-interativo img {
+width: 100%;
 }
-
-.menu span{
-
-    font-size: 60px;
-    font-weight: bolder;
-    justify-content: space-evenly;
-    
-}
-
-
-
-header nav ul{
-    display: flex;
-    font-size: max(30px, 2vw);
-    background-color: #dfdfdd;
-    justify-content: space-around;
-}
-
-    footer{
-        background-color: #63be17;
-        display: flex;
-        color: rgba(41, 22, 124, 0.952);
-        font-size:60px;
-        font-weight: bolder;
-        justify-content:flex-start;
-        text-align: center;
-        align-content: center;
-        border-top: 8px solid white;     
-
-    }
-        
 
 .caixa1{
-    width: 21.4%;
-    height: 55%;
-    margin: 1%;
-    padding: 100px;
-    background-color: #63be17;
-    border:2px solid black; 
-    justify-items: center;
-
+  width: 21.4%;
+  height: 55%;
+  margin: 1%;
+  padding: 100px;
+  background-color: var(--verdeescuro);
+  border:2px solid black; 
+  justify-items: center;
 }
 
+.area-noticias-caixa {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  border-top: 2px solid var(--verdeescuro);
+}
+
+.noticias {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--verdeclaro);
+}
+
+.noticias img {
+  width: 500px;
+}
+
+
+.area-texto  p {
+  padding: 10px;
+  max-width: 50px;
+}
+.caixa1{
+display: block;
+align-items: center;
+justify-content: center;
+margin: auto;
+}
+.caixa1 img{
+  max-width: 150%;
+}
 form{
-    color: white;
-    align-items: center;
+  color: white;
+  align-items: center;
 }
 
 form label {
-    display: block;
+  display: block;
+}  
+
+
+.btn {
+  margin: 20px 50px;
+  background-color: var(--verdeescuro);
+  border-radius: 5px;
+  padding: 0 30px;
+  font-size: 100%;
+  font-weight: 700;
+  width: 10%;
 }
 
-h1{
-    color: rgb(48, 48, 88);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    font-size: max(50px, 2vw); 
-}
+.btn a {
+  color: var(--branco);
+  }
 
 /*--------------estilos-da-validacao--------------*/
 
 .helper-text {
-    display: none;
-    font-size: .8rem;
-    color: darkred;
+  display: none;
+  font-size: 0.8rem;
+  color: darkred;
 }
 
 .required-popup::after {
-    content: "*Campo obrigatório";
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #DFDFDF;
-    font-size: .65rem;
-    padding: .2rem .3rem;
-    width: auto;
-    display: block;
-    background-color: #202020;
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #dfdfdf;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
 }
 
 input.error {
-    border: solid 2px #992020;
-    background-color: #CCBBBB;
-    color: #662020;
+  border: solid 2px #992020;
+  background-color: #ccbbbb;
+  color: #662020;
 }
 
 input.correct {
-    background-color: #BBCCBB;
-    border: solid 2px #206620;
-    color: #206620;
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
 }
 
 textarea.error {
-    border: solid 2px #992020;
-    background-color: #CCBBBB;
-    color: #662020;
+  border: solid 2px #992020;
+  background-color: #ccbbbb;
+  color: #662020;
 }
 
 textarea.correct {
-    background-color: #BBCCBB;
-    border: solid 2px #206620;
-    color: #206620;
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
 }
 
 .visible {
-    display: block;
+  display: block;
 }
