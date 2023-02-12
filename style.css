@@ -15,65 +15,6 @@
   box-sizing: border-box;
   outline: none;
   max-width: 1920px;
-
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 5px 40px 0px 40px;
-  height: 100%;
-  max-height: 100px;
-  background-color: var(--verdeescuro);
-  color: var(--branco);
-}
-#logo{
-    width: 390px;
-}
-.menu span {
-  font-size: 50px;
-  font-weight: bolder;
-}
-
-.buscar:hover {
-  transform: scale(1.3);
-  transition: all 0.5s;
-}
-.navegacao{
-  border: 1px solid var(--branco);
-  background-color: var(--verdeclaro);
-}
-
-.navegacao img {
-  width: 60px;
-}
-.navegacao nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 800px;
-}
-
-.navegacao li {
-  color: black;
-  padding: 0 10px;
-  font-weight: bolder;
-  font-size: 20px;
-  background-color: var(--verdeclaro);
-}
-.redesociais a :hover{
-  transform: scale(1.1);
-  transition: all 0.5s;}
-
-.navegacao nav ul :hover{
-  transform: scale(1.3);
-  transition: all 0.5s;
-  border: 1px solid var(--branco);
-}
-
-button {
-  background-color: var(--verdeescuro);
 }
 
 /* carrossel */
@@ -151,14 +92,3 @@ button{
     color: var(--branco);
   }
 
-footer {
-  background-color: var(--verdeescuro);
-  display: flex;
-  color: var(--branco);
-  font-size: 30px;
-  font-weight: bolder;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 50px;
-  padding-right: 250px;
-}

@@ -17,21 +17,6 @@
   max-width: 1920px;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 5px 40px 0px 40px;
-  max-height: 100%;
-  background-color: var(--verdeescuro);
-  color: var(--branco);
-}
-
-.menu span {
-  font-size: 50px;
-  font-weight: bolder;
-}
-
 .times{
 background-color: var(--verdeescuro);
 border: 1px solid var(--branco);
@@ -48,29 +33,6 @@ border: 1px solid var(--branco);
 .times nav ul a li {
   width: 100px;
 }
-.navegacao{
-  border: 1px solid var(--branco);
-  background-color: var(--verdeclaro);
-}
-
-.navegacao img {
-  width: 60px;
-}
-.navegacao nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 800px;
-}
-
-.navegacao li {
-  color: black;
-  padding: 0 10px;
-  font-weight: bolder;
-  font-size: 20px;
-  background-color: var(--verdeclaro);
-}
- 
 
 .titulos {
   margin: 0 50px;
@@ -161,7 +123,7 @@ tbody tr {
   border-radius: 5px;
   font-size: 15px;
   font-weight: 700;
-  width: 10%;
+  width: 40%;
   padding: 0 5%;
 }
 
@@ -180,33 +142,4 @@ color: var(--branco);
 }
 .btn a {
   color: var(--branco);
-}
-/*-----hover-----*/
-
-.redesociais a :hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
-}
-
-.navegacao nav ul :hover{
-  transform: scale(1.3);
-  transition: all 0.5s;
-  border: 1px solid var(--branco);
-}
-
-.buscar:hover {
-  transform: scale(1.3);
-  transition: all 0.5s;
-}
-/*----fim---hover----*/
-footer {
-  background-color: var(--verdeescuro);
-  display: flex;
-  color: var(--branco);
-  font-size: 30px;
-  font-weight: bolder;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 50px;
-  padding-right: 250px;
 }
