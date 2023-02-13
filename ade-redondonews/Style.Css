@@ -33,10 +33,24 @@
     font-size: 50px;
     font-weight: bolder;
   }
-  
-  .navegacao{
+  .redesociais {
+    display: flex;
+  }
+  @media (max-width:800px) {
+    .redesociais {
+      display: none;
+    }
+  }
+
+    .navegacao {
+    display:flex;
     border: 1px solid var(--branco);
     background-color: var(--verdeclaro);
+  }
+  @media (max-width:800px) {
+    .navegacao {
+      display: none;
+    }
   }
   
   .navegacao img {
@@ -48,6 +62,11 @@
     justify-content: space-between;
     width: 800px;
   }
+  @media (max-width:800px) {
+    .nav li {
+      display: none;
+    }
+  }
   
   .navegacao li {
     color: black;
@@ -56,10 +75,12 @@
     font-size: 20px;
     background-color: var(--verdeclaro);
   }
+
+  
   .times{
     background-color: var(--verdeescuro);
   }
-   
+  
   .times nav ul {
       display: flex;
       align-items: center;
@@ -68,6 +89,14 @@
       padding: 5px 0 ;
       margin: auto;
   }
+
+  @media (max-width:800px) {
+    .times nav ul {
+      display: none;
+    }
+  }
+
+
   .times li img {
   padding: 0  10px;
   align-items: center;
@@ -77,6 +106,17 @@
   
   .banner-interativo img {
   width: 100%;
+  }
+
+.mobile {
+  display:none;
+  margin-left: 4rem;
+}
+  @media (max-width:800px) {
+    .mobile {
+      display: block;
+
+    }
   }
   
   .caixa1{
@@ -118,8 +158,10 @@
   justify-content: center;
   margin: auto;
   }
+  
+
   .caixa1 img{
-    max-width: 150%;
+  max-width: 150%;
   }
   form{
     color: white;
@@ -141,6 +183,8 @@
     padding-left: 50px;
     padding-right: 250px;
   }
+
+  
   .btn {
     margin: 20px 50px;
     background-color: var(--verdeescuro);
@@ -155,8 +199,8 @@
     color: var(--branco);
     }
   
-   /*-----hover-----*/
-   .buscar:hover {
+  /*-----hover-----*/
+  .buscar:hover {
     transform: scale(1.3);
     transition: all 0.5s;
   }
@@ -218,4 +262,8 @@
   
   .visible {
     display: block;
+  }
+  
+  .more {
+    display: none;
   }
