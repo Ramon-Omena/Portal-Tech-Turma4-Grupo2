@@ -42,8 +42,7 @@ border: 1px solid var(--branco);
 }
 
 .area-videos {
-  border-top: 2px solid var(--verdeescuro);
-  margin: 0 50px;
+   margin: 0 50px;
 }
 
 .videos {
