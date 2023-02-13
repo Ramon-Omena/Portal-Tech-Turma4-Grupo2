@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/hugo-basquete/style.css">
+    <link rel="stylesheet" href="/style_padrao.css">
     <script src="/hugo-basquete/script.js" defer></script>
     <title>Basquete | re</title>
 </head>
@@ -28,6 +29,18 @@
                     <a href=""><img src="/hugo-basquete/img/buscar.svg" alt="Buscar"></a>
                 </div>
             </div>
+            
+            <section class="navegacao">
+                <nav>
+                    <ul>
+                        <a href="/index.html"><li>Inicio</li></a>
+                        <a href="/ramon-futebol/ramon-futebol.html"><li>Futebol</li></a>
+                        <a href="/hugo-basquete/hugo-basquete.html"><li>Basquete</li></a>
+                        <a href="/rodrigo-volei/rodrigo-volei.html"><li>Vôlei</li></a>
+                        <a href="/ade-redondonews/ade-redondonews.html"><li>News</li></a>
+                    </ul>
+                </nav>
+            </section>
 
             <section class="times">
                 <nav>
@@ -44,21 +57,8 @@
                     </ul>
                 </nav>
             </section>
-                <section class="navegacao">
-                    <nav>
-                        <ul>
-                            <a href="/index.html"><li>Inicio</li></a>
-                            <a href="/ramon-futebol/ramon-futebol.html"><li>Futebol</li></a>
-                            <a href="/hugo-basquete/hugo-basquete.html"><li>Basquete</li></a>
-                            <a href="/rodrigo-volei/rodrigo-volei.html"><li>Vôlei</li></a>
-                            <a href="/ade-redondonews/ade-redondonews.html"><li>News</li></a>
-                        </ul>
-                    </nav>
-                </section>
+               
                 
-        </section>
-        <section class="banner-interativo">
-            <a href=""><img src="/hugo-basquete/img/banner.png" alt="banner"></a>
         </section>
     </header>
 
@@ -156,14 +156,24 @@
 
                 <div class="enquete">
                     <h4>QUEM VENCE AMANHÃ?<h4>
-                        <form action="Dados_enquete">
-                            <input type="radio" name="time" id="SÃO PAULO">
+                        <form action="">
+                            <input type="radio" name="time" id="r1" >
                             <label for="SÃO PAULO">SÃO PAULO</label>
-                            <input type="radio" name="time" id="FLABASQUETE">
+
+                            <input type="radio" name="time" id="r2" >
                             <label for="FLABASQUETE">FLABASQUETE</label>
-                            <input type="button" name="ENVIAR" id="Enviar">
-                            <label class="btn-enviar" for="Enviar">ENVIAR</label>
+                            <input class="btn-enviar" type="button" id="btn_enviar" value="Enviar">
+                            
+                            
+                        
+                            <!-- <input type="radio" name="sexo" value="masculino" id="r1"><br><br> F:
+                            <input type="radio" name="sexo" value="feminino" id="r2"><br><br> Salvar login :
+                            <input type="checkbox"><br><br> Menssagem de texto das novidades :<input type="checkbox"><br><br><br>
+                            <input type="button" id="btn" value="entrar"> -->
+                        
                         </form>
+                        
+
                         
                   </div>
 

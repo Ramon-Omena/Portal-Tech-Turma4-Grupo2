@@ -1,103 +1,210 @@
+:root {
+  --verdeescuro: #06AA48;
+  --branco: #FEFEFE;
+  --verdeclaro: #C1EAD2;
+}
+
 * {
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-    margin: 0;
-    padding:0;
-    border: 0;
-    list-style-type: none;
-    text-decoration: none;   
+  font-family: "Baloo Bhaijaan 2", cursive;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  align-content: center;
+  box-sizing: border-box;
+  outline: none;
+  max-width: 1920px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px 40px 0px 40px;
+  max-height: 100%;
+  background-color: var(--verdeescuro);
+  color: var(--branco);
+}
+
+.menu span {
+  font-size: 50px;
+  font-weight: bolder;
+}
+ 
+.navegacao{
+  border: 1px solid var(--branco);
+  background-color: var(--verdeclaro);
+}
+
+.navegacao img {
+  width: 60px;
+}
+.navegacao nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.navegacao li {
+  color: black;
+  padding: 0 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: var(--verdeclaro);
+}
+
+.btn {
+  margin: 20px 50px;
+  background-color: var(--verdeescuro);
+  border-radius: 5px;
+  padding: 0 30px;
+  font-size: 100%;
+  font-weight: 700;
+  width: 10%;
+}
+
+.btn a {
+  color: var(--branco);
+}
+
+/*------hover------*/
+.buscar:hover {
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+
+.redesociais a :hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.navegacao nav ul :hover{
+  transform: scale(1.3);
+  transition: all 0.5s;
+  border: 1px solid var(--branco);
+  }
+/*----fim---hover----*/
+footer {
+  background-color: var(--verdeescuro);
+  display: flex;
+  color: var(--branco);
+  font-size: 30px;
+  font-weight: bolder;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 250px;
 }
 body {
-    background-color: rgba(127, 255, 234, 0.151);
-
-}
-header .fotoPrincipal {
-    position: normal;
-    width: 100%;
-    height: 85px;
-    background: #0c5e6c;
+    background-color: #c1ead2;
 }
 
-header .fotoPrincipal #titulo-da-pagina {
-    position: absolute;
-    width: 250px;
-    height: 70px;
+form  {
+    display:flex ;
+    flex-direction: column;
+    width: 400px;
+    background-image:linear-gradient(rgba(22, 170, 12, 0.829),rgb(125, 219, 122) );
+    border-radius: 16px;
+    padding: 1.5rem 40px;
     left: 40%;
-    top: 15px;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 72px;
-    text-align: center;
-
-    color: #FFFFFF;
+    margin: 5%;
 }
-header .logo{ 
+
+
+.enquete  {
+    display: -webkit-inline-box;
+    width: 300px;
+    background-image:linear-gradient(rgba(22, 170, 12, 0.829),rgba(100, 235, 95, 0.219) );
+    border-radius: 16px;
+    padding: 0rem 40px;
+    color: #fbfffb;
     position: absolute;
-    width: 1020px;
-    margin-left: 5%;
-    margin-top: -85px;
-}
-header form {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 78%;
-    top: 12px;
+    top:210%;
+    left:60%;
+    text-align:center;
+    color:black;
+    text-align:right;
+    
 }
 
-header .buscador #busca {
-    border-radius: 12px;
-    height: 20px;
-
-}
-
-header form button {
-    background-color: #0c596c41;
-    border-radius:12px;
-}
 
 
 main section {
     display:flex;
     justify-content:space-around;
 }
-main h1, h2{
+main h1,h2{
     text-align:center;
-    color: #310c6c;
+    color: #06aa48;
+    font-size: 40px;
+}
+
+button {
+    border-radius:100%;
+    color:#010804 ;
+    background-image:linear-gradient(rgba(22, 170, 12, 0.829),rgba(167, 243, 165, 0.473) );
+
 }
 
 main aside{
     display:flex;
-    justify-content:center;
-    width: 150;
-}
-
-div h3{
-       color: #310c6c;
-}   
-div h4{
-    text-align:right;
-    color: #310c6c;
-    display: flex;
     justify-content:end;
+    width: 400;
+    margin-left: 100px ;
+    margin-right: 50px;
 }
 
-div h4 ul{
-    text-align:right;
-    color: #000000;
-    
-}
-div h5{ 
-    color: #0c5e6c;
-    
-}
 main section video{
     border-radius:12px;
 }
 
 
+/*--------------estilos-da-validacao--------------*/
 
-section .sorteio{
-    border-radius: 40%;
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}
+
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+}
+
+input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+
+input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+}
+
+textarea.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+
+textarea.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+}
+
+.visible {
+    display: block;
 }
