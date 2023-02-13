@@ -108,8 +108,21 @@
 
 .noticias img {
   width: 400px;
+  height: 250px;
 }
 
+@media (max-width:670px){
+  .noticias img {
+    width: 300px;
+  }
+  
+}
+@media (max-width:570px){
+  .noticias img {
+    height: 200px;
+  }
+  
+}
 .area-noticiasjogos {
   display: flex;
   justify-content: space-between;
@@ -126,6 +139,11 @@
 .area-texto {
   padding: 10px;
   max-width: 400px;
+}
+@media (max-width: 570px){
+  .area-texto {
+  font-size: 80%;
+  }
 }
 
 table {
@@ -148,21 +166,6 @@ tbody tr {
   border-right: 5px solid var(--verdeclaro);
 }
 
-.enquete {
-  display: block;
-  padding: 40px;
-  font-size: 20px;
-}
-
-.btn-enviar {
-  background-color: var(--verdeescuro);
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: 700;
-  width: 40%;
-  padding: 0 5%;
-}
-
 .btn {
   margin: 20px 50px;
   background-color: var(--verdeescuro);
@@ -170,12 +173,8 @@ tbody tr {
   padding: 0 30px;
   font-size: 100%;
   font-weight: 700;
-  width: 10%;
 }
 
-.btn-enviar {
-  color: var(--branco);
-}
 .btn a {
   color: var(--branco);
 }
