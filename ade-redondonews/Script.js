@@ -1,19 +1,21 @@
-function leiaMais(){
-  var pontos = document.getElementById("pontos");
-  var maisTexto = document.getElementById("mais");
-  var btnLeiaMais = document.getElementById("btnLeiaMais");
+const buttons = document.querySelectorAll("button");
+buttons.forEach(button => {
+  button.addEventListener("click", function () {
+    const target = button.getAttribute("data-target");
+    const more = document.getElementById(target);
+    if (more.style.display === "none") {
+      button.innerHTML = "Leia menos";
+      more.style.display = "block";
+    } else {
+      button.innerHTML = "Leia mais";
+      more.style.display = "none";
+    }
+  });
+});
 
-  if(pontos.style.display === "inline"){
-    pontos.style.display = "none";
-    maisTexto.style.display = "inline";
-    btnLeiaMais.innerHTML = "Leia Menos";
-  }
-  else {
-    pontos.style.display = "inline";
-    maisTexto.style.display = "none";
-    btnLeiaMais.innerHTML = "Leia Mais";
-  }
-}
+
+
+
 
 // ---------- FUNÇÕES GERAIS -------------- //
 function togglePopup(input, label) {
