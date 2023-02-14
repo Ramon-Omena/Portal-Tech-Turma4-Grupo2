@@ -18,6 +18,14 @@
   
   }
 
+  .navegacao {
+    display: flex;
+  }
+  @media (max-width:800px) {
+    .navegacao {
+      display: none;
+    }}
+
   .redesociais {
     display: flex;
   }
