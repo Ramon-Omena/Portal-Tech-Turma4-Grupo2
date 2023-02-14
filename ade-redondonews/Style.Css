@@ -17,7 +17,7 @@
     max-width: 1920px;
   
   }
- 
+
   .redesociais {
     display: flex;
   }
@@ -79,6 +79,7 @@
     justify-items: center;
   }
   
+  
   .area-noticias-caixa {
     display: flex;
     justify-content: space-between;
@@ -86,12 +87,18 @@
     border-top: 2px solid var(--verdeescuro);
   }
   
+
   .noticias {
     display: flex;
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px solid var(--verdeclaro);
   }
+  @media (max-width:800px) {
+    .noticias {
+      flex-direction: column-reverse;
+    }}
+
   
   .noticias img {
     width: 500px;
@@ -108,11 +115,11 @@
   justify-content: center;
   margin: auto;
   }
-  
 
   .caixa1 img{
   max-width: 150%;
   }
+
   form{
     color: white;
     align-items: center;
@@ -136,6 +143,7 @@
     color: var(--branco);
     }
 
+    
   /*--------------estilos-da-validacao--------------*/
   
   .helper-text {
