@@ -88,10 +88,10 @@
   padding-bottom: 5px;
   border-bottom: 1px;
 }
-@media (max-width:800px){
+@media (max-width: 800px) {
   .noticias {
     display: grid;
-  } 
+  }
 }
 .noticias img {
   width: 400px;
@@ -103,28 +103,27 @@
   margin: 50px;
   border-top: 2px;
 }
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .noticiasjogos {
     display: grid;
   }
 }
 .area-texto {
   padding: 10px;
- /*  max-width: 400px; */
+  /*  max-width: 400px; */
 }
-@media (max-width: 570px){
+@media (max-width: 570px) {
   .area-texto {
-  font-size: 80%;
+    font-size: 80%;
   }
 }
 
 .area-brasileirao-a img {
-max-width: 600px;
-align-items: center;
+  max-width: 600px;
+  align-items: center;
 }
-@media (max-width:1300px){
-  .area-brasileirao-a img  {
+@media (max-width: 1300px) {
+  .area-brasileirao-a img {
     max-width: 400px;
   }
 }
-
