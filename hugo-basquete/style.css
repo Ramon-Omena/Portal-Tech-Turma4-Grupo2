@@ -166,15 +166,3 @@ tbody tr {
   border-right: 5px solid var(--verdeclaro);
 }
 
-.btn {
-  margin: 20px 50px;
-  background-color: var(--verdeescuro);
-  border-radius: 5px;
-  padding: 0 30px;
-  font-size: 100%;
-  font-weight: 700;
-}
-
-.btn a {
-  color: var(--branco);
-}
