@@ -63,6 +63,12 @@ margin-bottom: 10px;
 padding-bottom: 5px;
 border-bottom: 1px solid var(--verdeclaro);
 }
+@media (max-width: 800px) {
+  .noticias {
+    display: block;
+    justify-content: center;
+  }
+}
 .noticias img{
   width: 400px;
 }
@@ -73,6 +79,13 @@ justify-content: space-between;
 margin: 50px;
 border-top: 2px solid var(--verdeescuro);
 }
+@media (max-width: 1300px) {
+  .noticiasjogos {
+    display: grid;
+    justify-content: center;
+  }
+}
+
 .area-texto{
 padding: 10px;
 max-width: 400px;

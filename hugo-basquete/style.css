@@ -1,7 +1,7 @@
 :root {
-  --verdeescuro: #06AA48;
-  --branco: #FEFEFE;
-  --verdeclaro: #C1EAD2;
+  --verdeescuro: #06aa48;
+  --branco: #fefefe;
+  --verdeclaro: #c1ead2;
 }
 
 * {
@@ -17,21 +17,27 @@
   max-width: 1920px;
 }
 
-.times{
-background-color: var(--verdeescuro);
-border: 1px solid var(--branco);
-
+.times {
+  background-color: var(--verdeescuro);
+  border: 1px solid var(--branco);
 }
 
 .times nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  padding: 5px 40px 0px 40px;
 }
 
-.times nav ul a li {
-  width: 100px;
+@media (max-width: 876px) {
+  .times nav ul {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .times img {
+    width: 50%;
+  }
 }
 
 .titulos {
@@ -41,16 +47,15 @@ border: 1px solid var(--branco);
   max-width: 1920px;
 }
 
-.area-videos {
-  border-top: 2px solid var(--verdeescuro);
-  margin: 0 50px;
-}
-
 .videos {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 10px;
+}
+
+@media (max-width: 840px){
+  .videos {
+    display: grid;
+  }
 }
 
 .videos-2 {
@@ -64,11 +69,36 @@ border: 1px solid var(--branco);
   height: 510px;
 }
 
+@media (max-width: 1438px){
+  .videos-gr iframe {
+    width: 560px;
+    height: 360px;
+  }
+}
+@media (max-width: 975px){
+  .videos-gr iframe {
+    width: 460px;
+    height: 260px;
+  }
+}
+
 .videos-2 iframe {
   width: 470px;
   height: 250px;
 }
 
+@media (max-width: 1438px){
+  .videos-2 iframe {
+    width: 400px;
+    height: 180px;
+  }
+}
+@media (max-width: 975px){
+  .videos-2 iframe {
+    width: 370px;
+    height: 160px;
+  }
+}
 .noticias {
   display: flex;
   margin-bottom: 10px;
@@ -78,8 +108,21 @@ border: 1px solid var(--branco);
 
 .noticias img {
   width: 400px;
+  height: 250px;
 }
 
+@media (max-width:670px){
+  .noticias img {
+    width: 300px;
+  }
+  
+}
+@media (max-width:570px){
+  .noticias img {
+    height: 200px;
+  }
+  
+}
 .area-noticiasjogos {
   display: flex;
   justify-content: space-between;
@@ -87,9 +130,20 @@ border: 1px solid var(--branco);
   border-top: 2px solid var(--verdeescuro);
 }
 
+@media (max-width: 840px){
+  .area-noticiasjogos {
+    display: grid;
+  }
+}
+
 .area-texto {
   padding: 10px;
   max-width: 400px;
+}
+@media (max-width: 570px){
+  .area-texto {
+  font-size: 80%;
+  }
 }
 
 table {
@@ -112,21 +166,6 @@ tbody tr {
   border-right: 5px solid var(--verdeclaro);
 }
 
-.enquete {
-  display: block;
-  padding: 40px;
-  font-size: 20px;
-}
-
-.btn-enviar{
-  background-color: var(--verdeescuro);
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: 700;
-  width: 40%;
-  padding: 0 5%;
-}
-
 .btn {
   margin: 20px 50px;
   background-color: var(--verdeescuro);
@@ -134,12 +173,8 @@ tbody tr {
   padding: 0 30px;
   font-size: 100%;
   font-weight: 700;
-  width: 10%;
 }
 
-.btn-enviar{
-color: var(--branco);
-}
 .btn a {
   color: var(--branco);
 }
