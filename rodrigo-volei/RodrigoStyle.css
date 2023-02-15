@@ -55,20 +55,6 @@
   background-color: var(--verdeclaro);
 }
 
-.btn {
-  margin: 20px 50px;
-  background-color: var(--verdeescuro);
-  border-radius: 5px;
-  padding: 0 30px;
-  font-size: 100%;
-  font-weight: 700;
-  width: 10%;
-}
-
-.btn a {
-  color: var(--branco);
-}
-
 /*------hover------*/
 .buscar:hover {
   transform: scale(1.3);

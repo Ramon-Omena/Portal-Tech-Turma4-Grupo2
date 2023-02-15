@@ -1,7 +1,7 @@
 :root {
-  --verdeescuro: #06AA48;
+  --verdeescuro: #06aa48;
   --branco: #fefefe;
-  --verdeclaro: #C1EAD2;
+  --verdeclaro: #c1ead2;
 }
 
 * {
@@ -18,7 +18,7 @@
 }
 
 /* carrossel */
-.banner{
+.banner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@
   position: relative;
 }
 
-.banner-rotativo img{
+.banner-rotativo img {
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -40,11 +40,10 @@
   transition: opacity 2s;
 }
 
-.banner-rotativo img.selected{
+.banner-rotativo img.selected {
   opacity: 1;
 }
 /* carrossel */
-
 
 .titulos {
   margin: 0 50px;
@@ -53,42 +52,40 @@
   max-width: 1920px;
 }
 
-.area-tweets{
-margin-top: 60px;
+.area-tweets {
+  margin-top: 60px;
 }
 
-.noticias{
-display: flex;
-margin-bottom: 10px;
-padding-bottom: 5px;
-border-bottom: 1px solid var(--verdeclaro);
+.noticias {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--verdeclaro);
 }
-.noticias img{
+@media (max-width: 800px) {
+  .noticias {
+    display: block;
+    justify-content: center;
+  }
+}
+.noticias img {
   width: 400px;
 }
 
-.noticiasjogos{
-display: flex;
-justify-content: space-between;
-margin: 50px;
-border-top: 2px solid var(--verdeescuro);
+.noticiasjogos {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  border-top: 2px solid var(--verdeescuro);
 }
-.area-texto{
-padding: 10px;
-max-width: 400px;
+@media (max-width: 1300px) {
+  .noticiasjogos {
+    display: grid;
+    justify-content: center;
+  }
 }
 
-button{
-  margin: 20px 50px;
-  background-color: var(--verdeescuro);
-  border-radius: 5px;
-  padding: 0 30px;
-  font-size: 20px;
-  font-weight: 700;
-  width: 10%;
-  }
-  
-  button a{
-    color: var(--branco);
-  }
-
+.area-texto {
+  padding: 10px;
+  max-width: 400px;
+}
