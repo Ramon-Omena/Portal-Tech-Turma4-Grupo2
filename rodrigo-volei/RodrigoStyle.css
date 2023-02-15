@@ -55,6 +55,20 @@
   background-color: var(--verdeclaro);
 }
 
+.btn {
+  margin: 20px 50px;
+  background-color: var(--verdeescuro);
+  border-radius: 5px;
+  padding: 0 30px;
+  font-size: 100%;
+  font-weight: 700;
+  width: 10%;
+}
+
+.btn a {
+  color: var(--branco);
+}
+
 /*------hover------*/
 .buscar:hover {
   transform: scale(1.3);
@@ -69,6 +83,25 @@
   transform: scale(1.3);
   transition: all 0.5s;
   border: 1px solid var(--branco);
+  }
+
+  .times{
+    background-color: #3fa33f;
+  }
+   
+  .times nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      padding: 5px 0 ;
+      margin: auto;
+  }
+  .times li img {
+  padding: 0  10px;
+  align-items: center;
+  max-width: 100%;
+  align-items: center;
   }
 /*----fim---hover----*/
 footer {
@@ -86,36 +119,86 @@ body {
     background-color: #c1ead2;
 }
 
-form  {
-    display:flex ;
-    flex-direction: column;
-    width: 400px;
-    background-image:linear-gradient(rgba(22, 170, 12, 0.829),rgb(125, 219, 122) );
-    border-radius: 16px;
-    padding: 1.5rem 40px;
-    left: 40%;
-    margin: 5%;
+form {
+  
+  display: flex;
+  flex-direction: column;
+  width: 392px;
+  background-image: linear-gradient(rgba(22, 170, 12, 0.829),rgb(125, 219, 122) );
+  border-radius: 100px;
+  padding: 40px;
+  margin: 4%;
+  margin-right: inherit;
+  border-bottom-left-radius: 355px;
+  margin-left: 10%;
 }
 
+.notícias img {
+  display:flex;
+  text-align:center;
+  padding-left: 30%;
+  
+}
 
-.enquete  {
-    display: -webkit-inline-box;
-    width: 300px;
-    background-image:linear-gradient(rgba(22, 170, 12, 0.829),rgba(100, 235, 95, 0.219) );
-    border-radius: 16px;
-    padding: 0rem 40px;
-    color: #fbfffb;
+.Enquete {
+  height: 273px;
+  width: 198px;
+  margin-left: 62%;
+  margin-top: 5%;
+  position: absolute;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  box-shadow: rgb(208 208 208) 0px 0px 20px 8px;
+  background: linear-gradient(to top, rgb(99, 192, 122), rgb(193, 234, 210));
+  border-radius: 13%
+  }
+ 
+   
+ /*Descrição */
+ .Enquete-descrição{
+    display: inline-grid;
     position: absolute;
-    top:210%;
-    left:60%;
-    text-align:center;
-    color:black;
-    text-align:right;
-    
+    gap: 1em;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(23, 170, 12, 0.801),rgba(125, 219, 122, 0.877) );
+    height: 100%;
+    width: 150%;
+    bottom: 0px;
+    margin-left: 5%;
+    transition: all 1s cubic-bezier(0.18, 0.03, 0.29, 1.04);
+    padding: 1rem;
+    border-radius: 23%;
+    text-align: center;
+ }
+
+.input {
+  DISPLAY: TABLE-CAPTION;
+  TEXT-ALIGN: CENTER;
+  MARGIN-LEFT: 40px;
+  color: #206620;
+  width: 100%;
+
 }
+ 
+ /*Textos*/
+ .Título {
+  font-size: 1.4em;
+  font-weight: 700;
+ }
+ 
+ .Texto-body {
+  font-size: 1em;
+  line-height: 150%;
+ }
+ 
+ 
+ /* Hover states */
+ 
+ .Enquete:hover .Enquete-descrição {
+  transform: translateY(100%);
 
+ }
 
-
+ 
 main section {
     display:flex;
     justify-content:space-around;
@@ -130,22 +213,53 @@ button {
     border-radius:100%;
     color:#010804 ;
     background-image:linear-gradient(rgba(22, 170, 12, 0.829),rgba(167, 243, 165, 0.473) );
-
 }
 
-main aside{
-    display:flex;
-    justify-content:end;
-    width: 400;
-    margin-left: 100px ;
-    margin-right: 50px;
-}
-
-main section video{
+.vídeos,video{
     border-radius:12px;
+    display: inline-flex;
 }
 
+.caixa1{
+  width: 21.4%;
+  height: 55%;
+  margin: 1%;
+  padding: 100px;
+  background-color: var(--verdeescuro);
+  border:2px solid black; 
+  justify-items: center;
+}
 
+.area-noticias-caixa {
+  display: contents;
+  justify-content: baseline;
+  margin: 50px;
+
+}
+
+.noticias {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--verdeclaro);
+}
+
+.noticias img {
+  width: 800px;
+}
+
+.area-texto  p {
+  padding: 10px;
+  max-width: 50px;
+}
+.caixa1{
+display: block;
+align-items: center;
+justify-content: center;
+margin: auto;
+}
+.caixa1 img{
+  max-width: 150%;
+}
 /*--------------estilos-da-validacao--------------*/
 
 .helper-text {
