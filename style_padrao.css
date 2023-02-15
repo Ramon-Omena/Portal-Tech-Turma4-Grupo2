@@ -15,11 +15,11 @@
   color: var(--branco);
 }
 
-/* @media (max-width:800px) {
+@media (max-width:800px) {
   .menu {
-  
+    padding: 0;
   }
-} */
+}
 #logo {
   width: 390px;
 }
@@ -48,6 +48,11 @@
 @media (max-width: 800px) {
   .menu span {
     font-size: 20px;
+  }
+}
+@media (max-width: 455px) {
+  .menu span {
+    display: none;
   }
 }
 .redesociais a img {
@@ -96,8 +101,8 @@
 @media (max-width: 800px) {
   .navegacao nav ul {
     display: block;
-    width: 400px;
-    margin: 0 49px;
+    width: 100%;
+   
   }
 }
 
@@ -109,16 +114,30 @@
   background-color: var(--verdeclaro);
 }
 
+.btn {
+ /*  margin: 20px 50px; */
+ margin: 10px 0px 20px 80px;
+  background-color: var(--verdeescuro);
+  border-radius: 5px;
+  padding: 0 30px;
+  font-size: 20px;
+  font-weight: 700;
+  }
+  
+  .btn a{
+    color: var(--branco);
+  }
+
 footer {
   background-color: var(--verdeescuro);
   display: flex;
   color: var(--branco);
-  font-size: 30px;
+  /* font-size: 30px; */
   font-weight: bolder;
   justify-content: space-between;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 250px;
+/*   padding-left: 50px;
+  padding-right: 250px; */
 }
 
 /*-----hover-----*/
