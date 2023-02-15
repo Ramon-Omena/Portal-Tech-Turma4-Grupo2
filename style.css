@@ -1,0 +1,91 @@
+:root {
+  --verdeescuro: #06aa48;
+  --branco: #fefefe;
+  --verdeclaro: #c1ead2;
+}
+
+* {
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  align-content: center;
+  box-sizing: border-box;
+  outline: none;
+  max-width: 1920px;
+}
+
+/* carrossel */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-rotativo {
+  width: 100%;
+  height: 35vw;
+  max-height: 550px;
+  position: relative;
+}
+
+.banner-rotativo img {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: opacity 2s;
+}
+
+.banner-rotativo img.selected {
+  opacity: 1;
+}
+/* carrossel */
+
+.titulos {
+  margin: 0 50px;
+  font-size: 32px;
+  font-weight: 800;
+  max-width: 1920px;
+}
+
+.area-tweets {
+  margin-top: 60px;
+}
+
+.noticias {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--verdeclaro);
+}
+@media (max-width: 800px) {
+  .noticias {
+    display: block;
+    justify-content: center;
+  }
+}
+.noticias img {
+  width: 400px;
+}
+
+.noticiasjogos {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  border-top: 2px solid var(--verdeescuro);
+}
+@media (max-width: 1300px) {
+  .noticiasjogos {
+    display: grid;
+    justify-content: center;
+  }
+}
+
+.area-texto {
+  padding: 10px;
+  max-width: 400px;
+}

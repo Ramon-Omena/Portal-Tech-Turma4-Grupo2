@@ -1,0 +1,157 @@
+:root {
+  --verdeescuro: #06aa48;
+  --branco: #fefefe;
+  --verdeclaro: #c1ead2;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px 40px 0px 40px;
+  /*  height: 100%;
+  max-height: 100px; */
+  background-color: var(--verdeescuro);
+  color: var(--branco);
+}
+
+@media (max-width:800px) {
+  .menu {
+    padding: 0;
+  }
+}
+#logo {
+  width: 390px;
+}
+@media (max-width: 930px) {
+  #logo {
+    width: 290px;
+  }
+}
+@media (max-width: 800px) {
+  #logo {
+    width: 190px;
+  }
+}
+
+.menu span {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+@media (max-width: 930px) {
+  .menu span {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 455px) {
+  .menu span {
+    display: none;
+  }
+}
+.redesociais a img {
+  width: 50px;
+}
+@media (max-width: 930px) {
+  .redesociais a img {
+    width: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .redesociais a img {
+    width: 20px;
+  }
+}
+.buscar a img {
+  width: 50px;
+}
+@media (max-width: 930px) {
+  .buscar a img {
+    width: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .buscar a img {
+    width: 20px;
+  }
+}
+
+.navegacao {
+  border: 1px solid var(--branco);
+  background-color: var(--verdeclaro);
+}
+
+.navegacao img {
+  width: 60px;
+}
+
+.navegacao nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+}
+
+@media (max-width: 800px) {
+  .navegacao nav ul {
+    display: block;
+    width: 100%;
+   
+  }
+}
+
+.navegacao li {
+  color: black;
+  padding: 0 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: var(--verdeclaro);
+}
+
+.btn {
+ /*  margin: 20px 50px; */
+ margin: 10px 0px 20px 80px;
+  background-color: var(--verdeescuro);
+  border-radius: 5px;
+  padding: 0 30px;
+  font-size: 20px;
+  font-weight: 700;
+  }
+  
+  .btn a{
+    color: var(--branco);
+  }
+
+footer {
+  background-color: var(--verdeescuro);
+  display: flex;
+  color: var(--branco);
+  /* font-size: 30px; */
+  font-weight: bolder;
+  justify-content: space-between;
+  align-items: center;
+/*   padding-left: 50px;
+  padding-right: 250px; */
+}
+
+/*-----hover-----*/
+.buscar:hover {
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+.redesociais a :hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.navegacao nav ul :hover {
+  transform: scale(1.3);
+  transition: all 0.5s;
+  border: 1px solid var(--branco);
+}
+/*-----hover-----*/
