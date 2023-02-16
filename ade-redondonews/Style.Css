@@ -82,7 +82,7 @@
 }
 @media (max-width: 800px) {
   .noticias {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 
