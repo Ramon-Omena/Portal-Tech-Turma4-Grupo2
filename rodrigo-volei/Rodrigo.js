@@ -1,29 +1,46 @@
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
 
 // ---------- FUNÇÕES GERAIS -------------- //
 function togglePopup(input, label) {
-    // Mostrar popup de campo obrigatório
-    input.addEventListener("focus", () => {
-    label.classList.add("required-popup");
-    });
+  // Mostrar popup de campo obrigatório
+  input.addEventListener("focus", () => {
+  label.classList.add("required-popup");
+  });
 
-    // Ocultar popup de campo obrigatório
-    input.addEventListener("blur", () => {
-    label.classList.remove("required-popup");
-    });
+  // Ocultar popup de campo obrigatório
+  input.addEventListener("blur", () => {
+  label.classList.remove("required-popup");
+  });
 }
 
 function estilizarInputCorreto(input, helper) {
-    helper.classList.remove("visible");
+  helper.classList.remove("visible");
 
-    input.classList.remove("error");
-    input.classList.add("correct");
+  input.classList.remove("error");
+  input.classList.add("correct");
 }
 
 function estilizarInputIncorreto(input, helper) {
-    helper.classList.add("visible");
+  helper.classList.add("visible");
 
-    input.classList.add("error");
-    input.classList.remove("correct");
+  input.classList.add("error");
+  input.classList.remove("correct");
 }
 
 // ---------- VALIDAÇÃO NOME ---------- //
@@ -35,17 +52,17 @@ togglePopup(nomeInput, nomeLabel);
 
 // Validar valor do input
 nomeInput.addEventListener("change", (e)=> {
-    let valor = e.target.value
+  let valor = e.target.value
 
-    if(valor.length < 4){
-      // Adicionar estilos dinâmicos se o valor tiver menos de 4 caracteres
-    nomeHelper.innerText = "Seu nome precisa ter 4 ou mais caracteres";
-    estilizarInputIncorreto(nomeInput, nomeHelper)
-    } else {
-      // Adicionar estilos dinâmicos se o valor estiver correto
-    estilizarInputCorreto(nomeInput, nomeHelper);
-    inputsCorretos.nome = true;
-    }
+  if(valor.length < 4){
+    // Adicionar estilos dinâmicos se o valor tiver menos de 4 caracteres
+  nomeHelper.innerText = "Seu nome precisa ter 4 ou mais caracteres";
+  estilizarInputIncorreto(nomeInput, nomeHelper)
+  } else {
+    // Adicionar estilos dinâmicos se o valor estiver correto
+  estilizarInputCorreto(nomeInput, nomeHelper);
+  inputsCorretos.nome = true;
+  }
 })
 
 // ---------- VALIDAÇÃO EMAIL ---------- //
@@ -57,17 +74,17 @@ togglePopup(emailInput, emailLabel);
 
 // Validar valor do input
 emailInput.addEventListener("change", (e)=> {
-    let valor = e.target.value
+  let valor = e.target.value
 
-    if(valor.includes("@") && valor.includes(".com")){
-      // Adicionar estilos dinâmicos se o valor estiver correto
-    estilizarInputCorreto(emailInput, emailHelper);
-    inputsCorretos.email = true;
-    } else {
-      // Adicionar estilos dinâmicos se o valor tiver menos de 3 caracteres
-    emailHelper.innerText = "Precisa inserir um email válido";
-    estilizarInputIncorreto(emailInput, emailHelper);
-    }
+  if(valor.includes("@") && valor.includes(".com")){
+    // Adicionar estilos dinâmicos se o valor estiver correto
+  estilizarInputCorreto(emailInput, emailHelper);
+  inputsCorretos.email = true;
+  } else {
+    // Adicionar estilos dinâmicos se o valor tiver menos de 3 caracteres
+  emailHelper.innerText = "Precisa inserir um email válido";
+  estilizarInputIncorreto(emailInput, emailHelper);
+  }
 })
 
 // ---------- VALIDAÇÃO MENSAGEM ---------- //
@@ -79,17 +96,17 @@ togglePopup(msgInput, msgLabel);
 
 // Validar valor da textarea
 msgInput.addEventListener("change", (e)=> {
-    let valor = e.target.value
+  let valor = e.target.value
 
-    if(valor.length < 8){
-      // Adicionar estilos dinâmicos se o valor tiver menos de 8 caracteres
-    msgHelper.innerText = "Sua mensagem precisa ter 8 ou mais caracteres";
-    estilizarInputIncorreto(msgInput, msgHelper)
-    } else {
-      // Adicionar estilos dinâmicos se o valor estiver correto
-    estilizarInputCorreto(msgInput, msgHelper);
-    inputsCorretos.msg = true;
-    }
+  if(valor.length < 8){
+    // Adicionar estilos dinâmicos se o valor tiver menos de 8 caracteres
+  msgHelper.innerText = "Sua mensagem precisa ter 8 ou mais caracteres";
+  estilizarInputIncorreto(msgInput, msgHelper)
+  } else {
+    // Adicionar estilos dinâmicos se o valor estiver correto
+  estilizarInputCorreto(msgInput, msgHelper);
+  inputsCorretos.msg = true;
+  }
 })
 
 let btnSubmit = document.querySelector('button[type="submit"]');
@@ -100,12 +117,10 @@ msg: false
 }
 btnSubmit.addEventListener("click", (e)=>{
 if(inputsCorretos.nome == false ||
-    inputsCorretos.email == false ||
-    inputsCorretos.msg == false) {
-    e.preventDefault();
-    console.log(inputsCorretos);
-    alert("É necessário preencher todos os campos corretamente!")
-    } else {
-    alert("Mensagem enviada com sucesso!");
-    }
+  inputsCorretos.email == false ||
+  inputsCorretos.msg == false) {
+  e.preventDefault();
+  console.log(inputsCorretos);
+  alert("Mensagem enviada com sucesso!");
+  }
 })

@@ -86,7 +86,7 @@
   display: flex;
   margin-bottom: 10px;
   padding-bottom: 5px;
-  border-bottom: 1px;
+  border-bottom: 1px solid var(--verdeclaro);
 }
 @media (max-width: 800px) {
   .noticias {
@@ -101,7 +101,7 @@
   display: flex;
   justify-content: space-between;
   margin: 50px;
-  border-top: 2px;
+  border-top: 2px solid var(--verdeescuro);
 }
 @media (max-width: 1200px) {
   .noticiasjogos {
