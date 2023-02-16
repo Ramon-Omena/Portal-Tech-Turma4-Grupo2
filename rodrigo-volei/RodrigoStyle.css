@@ -116,22 +116,22 @@ footer {
   padding-right: 250px;
 }
 body {
-    background-color: #c1ead2;
+    background-color:var(--branco);
 }
 
-form {
-  
+form{
   display: flex;
   flex-direction: column;
-  width: 392px;
+  width: 800px;
   background-image: linear-gradient(rgba(22, 170, 12, 0.829),rgb(125, 219, 122) );
   border-radius: 100px;
   padding: 40px;
   margin: 4%;
   margin-right: inherit;
-  border-bottom-left-radius: 355px;
-  margin-left: 10%;
+  margin-left: 20%;
 }
+
+
 
 .notícias img {
   display:flex;
@@ -209,11 +209,6 @@ main h1,h2{
     font-size: 40px;
 }
 
-button {
-    border-radius:100%;
-    color:#010804 ;
-    background-image:linear-gradient(rgba(22, 170, 12, 0.829),rgba(167, 243, 165, 0.473) );
-}
 
 .vídeos,video{
     border-radius:12px;
