@@ -1,0 +1,202 @@
+:root {
+  --verdeescuro: #06aa48;
+  --branco: #fefefe;
+  --verdeclaro: #c1ead2;
+}
+
+* {
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  align-content: center;
+  box-sizing: border-box;
+  outline: none;
+  max-width: 1920px;
+}
+
+.times {
+  background-color: var(--verdeescuro);
+}
+
+.times nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 5px 0;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .times nav ul {
+    display: none;
+  }
+}
+
+.times li img {
+  padding: 0 10px;
+  align-items: center;
+  max-width: 100%;
+  align-items: center;
+}
+
+.banner-interativo img {
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+  margin-left: 4rem;
+}
+@media (max-width: 800px) {
+  .mobile {
+    display: block;
+  }
+}
+
+.area-noticias-caixa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  border-top: 2px solid var(--verdeescuro);
+}
+@media (max-width: 840px) {
+  .area-noticias-caixa {
+    display: grid;
+  }
+}
+.area-noticias {
+max-width: 800px;
+}
+.noticias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--verdeclaro);
+}
+@media (max-width: 800px) {
+  .noticias {
+    flex-direction: column-reverse;
+  }
+}
+
+.noticias img {
+  width: 400px;
+  height: 250px;
+}
+@media (max-width: 670px) {
+  .noticias img {
+    width: 300px;
+  }
+}
+@media (max-width: 570px) {
+  .noticias img {
+    height: 200px;
+  }
+}
+
+#area-texto {
+  margin: 10px;
+  font-size: 80%;
+  max-width: 300px;
+}
+@media (max-width: 570px) {
+  #area-texto {
+    font-size: 60%;
+  }
+}
+.caixa1 {
+/*   width: 21.4%;
+  height: 55%;
+  margin: 1%;
+  padding: 100px; */
+  background-color: var(--verdeescuro);
+  border: 2px solid black;
+  justify-items: center;
+}
+.caixa1 form{
+padding: 10px;
+}
+.caixa1 img {
+  width: 300px;
+  height: 150px;
+}
+
+/*   .caixa1{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  }
+
+  .caixa1 img{
+  max-width: 150%;
+  } */
+
+form {
+  color: white;
+  align-items: center;
+}
+
+form label {
+  display: block;
+}
+
+/*--------------estilos-da-validacao--------------*/
+
+.helper-text {
+  display: none;
+  font-size: 0.8rem;
+  color: darkred;
+}
+
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #dfdfdf;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #ccbbbb;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+textarea.error {
+  border: solid 2px #992020;
+  background-color: #ccbbbb;
+  color: #662020;
+}
+
+textarea.correct {
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: block;
+}
+
+.more {
+  display: none;
+}
