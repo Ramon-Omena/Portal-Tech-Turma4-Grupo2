@@ -1,21 +1,3 @@
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  slidesPerGroup: 3,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-
-
 // ---------- FUNÇÕES GERAIS -------------- //
 function togglePopup(input, label) {
   // Mostrar popup de campo obrigatório
@@ -121,6 +103,31 @@ if(inputsCorretos.nome == false ||
   inputsCorretos.msg == false) {
   e.preventDefault();
   console.log(inputsCorretos);
+  alert("É necessário preencher todos os campos corretamente!")
+  } else {
   alert("Mensagem enviada com sucesso!");
   }
 })
+
+
+//VALIDAÇÃO ENQUETE
+function validate(){
+  var valid = false;
+  var x = document.enquete.selecao;
+  
+  for(var i=0;i<x.length;i++){
+    if(x[i].checked){
+      valid = true;
+      break;
+    }
+  }
+
+  if(valid){
+    alert("Escolha feita com Sucesso");
+  }
+  else{
+    alert("Por favor, faça uma escolha");
+    return false;
+  }
+}
+
